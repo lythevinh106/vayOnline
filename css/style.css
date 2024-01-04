@@ -1,0 +1,376 @@
+@import "reset.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: rgb(255, 153, 0);
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-primary-rgb: 0, 116, 232;
+    --bs-secondary-rgb: 192, 168, 132;
+    --bs-success-rgb: 25, 135, 84;
+    --bs-info-rgb: 34, 188, 238;
+    --bs-warning-rgb: 228, 92, 92;
+    --bs-danger-rgb: 255, 0, 0;
+    --bs-light-rgb: 248, 249, 250;
+    --bs-dark-rgb: 0, 0, 0;
+    --bs-white-rgb: 255, 255, 255;
+    --bs-black-rgb: 0, 0, 0;
+    --bs-body-color-rgb: 33, 37, 41;
+    --bs-body-bg-rgb: 255, 255, 255;
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --bs-body-font-family: var(--bs-font-sans-serif);
+    --bs-body-font-size: 1rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+    --bs-body-color: #212529;
+    --bs-body-bg: #fff;
+    --a-color-hover-1: rgb(34, 188, 238);
+    --a-color-hover-2: rgb(255, 102, 0);
+    --a-color-hover-3: rgb(192, 168, 132);
+    --a-color-1: white;
+    --a-color-2: rgba(0, 0, 0, 0);
+    --a-color-3: rgba(0, 0, 0, 0);
+    --color-combination-9: #00141e;
+    --color-support-1: #001e28;
+    --color-support-2: #999;
+    --color-secondary-3: #0f2d37;
+    --color-secondary-1: #00141e;
+    --color-combination-9: #001e28;
+    --color-combination-8: #0f2d37;
+    --bg-green: #96D036;
+    --input-bg: #8AB73C;
+    --bg-grey: #f5f5f5;
+    --bg-grey-1: #e3e3e3;
+    --bg-grey-2: #c4c5c5;
+    --bg-sv: #121321;
+    --bg-sv-1: #181a2a;
+    --color-contact: #F4574C;
+    --btn-yellow: #ffc000;
+    --bg-footer: #181a2a;
+    --bg-cool-1: #59cca6;
+    --bg-cool-2: #91ad41;
+    --bg-cool-3: #e3b375;
+    --bg-cool-4: #ef7f94;
+    --bg-cool-5: #f5f6fb;
+    --bg-cool-btn: #27272f;
+    --cool-text: #8b8b99;
+    --cool-text-bg: #91ad41;
+    --text: #707070;
+    --lg-bg: #f2f7f8;
+    --lg-bg-2: #19B7F9;
+    --lg-footer: #1c2f3c;
+    --input: #f2f7f8;
+    --bg-res: #f7f4ef;
+    --res-text: #fec200;
+    --res-footer: #181818;
+    --poco-footer: #24272e;
+    --poco-text: #8b8e96;
+    --poco-btn: #eb3e32;
+    --pc-lh: #f7f7f7;
+    --pc-btn-1: #FFB416;
+    --pc-tab: #ED4E2E;
+    --pc-tab-1: #EAEDF1;
+    --pc-text: #98A5C6;
+    --pc-text-1: #F07532;
+    --us-bg-1: #00c3ba;
+    --us-bg-2: #4582ff;
+    --us-bg-3: #f90;
+    --nt-text: #252525;
+    --nt-text-1: #888888;
+
+    /* mycolor */
+    --c_green-first: #04a927;
+    --c_green-secondary: #41ba4a;
+    --c_green-third: #098b25;
+
+    --c_black-secondary: #999;
+    --c_black-first: #1b1b1b;
+    --c_black-third: #555;
+    ---c_black-fourth: #00000080;
+}
+
+/*--------------font-family and font siza ------------------*/
+/*----400,500,600,700----*/
+
+
+@font-face {
+    font-family: SceneProBold_900;
+    src: url(../font/ScenePro-BlackItalic.woff2);
+}
+
+.font_scenepro_900 {
+    font-family: SceneProBold_900;
+    font-size: 15px;
+}
+
+
+
+
+
+
+/*--------------padding anh margin ------------------*/
+.p-6 {
+    padding-left: 8vw !important;
+    padding-right: 8vw !important;
+}
+
+
+/*-------------- thẻ menu ----------------------------*/
+.cursor {
+    cursor: pointer;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: rgb(var(--bs-danger-rgb));
+}
+
+a {
+    text-decoration: none;
+    color: inherit !important;
+
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--c_orange) !important;
+}
+
+input[type="checkbox"]:checked {
+    background-color: var(--c_orange) !important;
+    color: #fff !important;
+}
+
+input {
+    box-shadow: none !important;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-15 {
+    font-size: 15px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+
+
+.my-text-green-first {
+    color: var(--c_green-first) !important;
+}
+
+.my-text-green-secondary {
+    color: var(--c_green-secondary) !important;
+}
+
+.my-text-green-third {
+    color: var(--c_green-third) !important;
+}
+
+.my-text-black-first {
+    color: var(--c_black-first) !important;
+}
+
+
+
+.my-text-black-secondary {
+    color: var(--c_black-secondary) !important;
+}
+
+.my-text-black-third {
+    color: var(--c_black-third) !important;
+}
+
+.my-text-black-fourth {
+    color: var(---c_black-fourth) !important;
+}
+
+
+.my-bg-green-first {
+    background-color: var(--c_green-first) !important;
+}
+
+.my-bg-green-secondary {
+    background-color: var(--c_green-secondary) !important;
+}
+
+
+.my-bg-green-third {
+    background-color: var(--c_green-third) !important;
+}
+
+
+
+
+
+
+
+html,
+body {
+
+
+
+    color: var(--c_black);
+
+    font-size: 16px;
+
+    font-family: 'Open Sans', sans-serif;
+    /* overflow-x: hidden; */
+    /* background-color: red; */
+}
+
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 6px;
+    /* độ rộng thanh scroll bar */
+}
+
+::-webkit-scrollbar-track {
+    /* background-color: black; */
+
+    /* màu nền của thanh scroll bar */
+
+}
+
+
+/*
+::-webkit-scrollbar-thumb {
+    background-color: var(--c_orange-secondary);
+
+    border-radius: 35px;
+    box-shadow: inset 0 0 5px grey;
+
+}
+*/
+
+.my-container-1 {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+
+}
+
+
+
+
+
+.btn-active-green:hover {
+
+    background-color: var(--c_green-secondary) !important;
+    color: white !important;
+    border-color: unset !important;
+    ;
+}
+
+/*
+.btn-orange {
+    background-color: var(--c_orange);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 0;
+}
+
+
+
+.btn-animation:hover {
+    color: #fff;
+    background: transparent !important;
+}
+
+
+
+.btn-animation {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-animation::before,
+.btn-animation::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 0;
+    background-color: var(--c_orange);
+    transition: height 0.4s ease-in-out;
+    z-index: -1;
+}
+
+.btn-animation:hover::before {
+    height: 100%;
+    bottom: 50%;
+    transition: height 0.4s ease-out;
+}
+
+.btn-animation:hover::after {
+    height: 100%;
+    top: 50%;
+    transition: height 0.4s ease-out;
+}
+*/
+
+
+@media (max-width: 767px) {
+    .my-container-1 {
+
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+}
+
+/* @media (min-width: 768px) and (max-width: 1023px) {
+    .my-container-1 {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+
+    }
+} */
+
+/*
+
+}
+
+@media (max-width: 767px) {
+   
+}*/

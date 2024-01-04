@@ -1,0 +1,2722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+    <!-- <link rel="stylesheet" type="text/css" href="css/reset.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css" />
+
+    <script src="public/js/jquery.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+
+
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <title>Vay Siêu Tốc</title>
+</head>
+
+<style>
+    .btn_to_top:hover {
+
+        background-color: var(--c_green-first) !important;
+
+        color: #fff !important;
+        cursor: pointer;
+        ;
+    }
+
+
+    .btn_to_top:hover i {
+        color: #fff !important;
+
+    }
+
+
+
+
+    .banner .owl-nav {
+        display: flex !important;
+        position: absolute !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+        justify-content: space-between !important;
+        width: 100%;
+    }
+
+
+
+    .banner .owl-prev span,
+    .outstanding .owl-prev span {
+
+        font-weight: bold;
+        font-size: 50px;
+        padding: 4px 8px;
+        color: #fff;
+        color: var(--c_green-secondary);
+
+
+    }
+
+    .banner .owl-next span,
+    .outstanding .owl-next span {
+
+        font-size: 50px;
+        padding: 4px 8px;
+        font-weight: bold;
+
+
+        color: var(--c_green-secondary);
+
+
+
+
+    }
+
+
+
+    /* header */
+
+    .header-container.hang-up {
+
+        position: fixed !important;
+        width: 100% !important;
+        background-color: rgba(255, 255, 255, 0.9) !important;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, .15) !important;
+        z-index: 5;
+        top: 0 !important;
+
+    }
+
+
+    .menu-pc ul li:hover a {
+
+        color: var(--c_green-first) !important;
+
+    }
+
+
+    .breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+
+        /* display: none !important; */
+        content: "»";
+    }
+
+
+
+
+    .footer-brand {
+        display: flex !important;
+        flex-wrap: wrap;
+        justify-content: space-between !important;
+
+    }
+
+    .footer-brand>li {
+        font-size: 12px !important;
+        width: 25% !important;
+        margin: 5px 0px !important;
+        font-weight: 400 !important;
+
+
+
+    }
+
+    .btn_to_top {
+        display: none;
+    }
+
+    .owl-carousel .owl-stage-outer {
+
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {}
+
+    @media (max-width: 767px) {
+
+
+        .header-container .header {
+            padding: 10px 0px !important;
+
+
+
+        }
+
+
+
+
+
+
+        .header .header_logo img {
+            width: 120px !important;
+        }
+
+
+
+        .owl-carousel img {
+            height: 150px !important;
+        }
+
+
+        .banner .owl-prev span,
+        .outstanding .owl-prev span {
+
+
+            font-size: 35px;
+
+
+
+        }
+
+        .banner .owl-next span,
+        .outstanding .owl-next span {
+
+            font-size: 35px;
+
+
+
+
+
+        }
+
+
+
+
+
+        .content h1 {
+            font-size: 19px !important;
+            line-height: 1.3;
+        }
+
+
+
+
+
+        .lend-money {
+            width: 100% !important;
+        }
+
+
+        .procress-lend-wrapper {
+            width: 100%;
+        }
+
+        .footer-logo {
+            width: 50% !important;
+        }
+
+        .footer-logo img {
+            width: 120px !important;
+        }
+
+        .footer-info {
+            order: 1 !important;
+            width: 100% !important;
+            justify-content: flex-start !important;
+            margin-top: 10px !important;
+
+
+        }
+
+        .footer-info li {
+            font-size: 13px !important;
+            font-weight: normal !important;
+            text-align: left !important;
+            margin: 0px 0px !important;
+        }
+
+        .footer-info li:nth-child(2) {
+            margin-left: 5px !important;
+        }
+
+        .footer-info .schema-website {
+            display: none !important;
+        }
+
+        .footer .footer-social {
+            width: 50% !important;
+            justify-content: flex-end;
+        }
+
+        .footer-brand {}
+
+        .footer-policy {
+            order: 2 !important;
+        }
+
+        .footer-end {
+            order: 4 !important;
+        }
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media (min-width: 768px) and (max-width: 1023px) {}
+
+
+
+
+
+
+
+
+
+
+    @media (max-width: 767px) {}
+</style>
+
+
+
+<body>
+
+    <!-- header-top -->
+
+    <div class="header-container row mx-0 px-0  ">
+
+        <div class="my-container-1   ">
+
+            <div class="header d-flex justify-content-between justify-content-lg-between  align-items-center 
+            border-1 border-bottom " style="padding: 18px 0px;">
+                <div class="header_logo">
+                    <a href="/"> <img src="public/images/logoVaytot2.png" style="width: 129px;" alt="logo-main"></a>
+                </div>
+
+                <div class="menu-pc d-none d-sm-flex ">
+                    <ul class="w-100 my-text-black-fourth fw-semibold d-flex justify-content-between fs-15">
+                        <li class="d-flex align-items-center px-2">
+                            <a class="" href="#"> Mở Thẻ Ngân Hàng</a>
+                        </li>
+                        <li class="d-flex align-items-center px-2">
+                            <a class="" href="#"> Danh Sách Khoản Vay</a>
+                        </li>
+                        <li class="d-flex align-items-center px-2">
+                            <a class="" href="#"> Huớng Dẫn Vay</a>
+                        </li>
+                        <li class="d-flex align-items-center px-2">
+                            <a class="" href="#"> Về Chúng Tôi</a>
+                        </li>
+                        <li class="d-flex align-items-center ps-2 ">
+                            <a class="" href="#"> Liên Hệ</a>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+
+                <div class="menu-mobile  d-sm-none fs-1">
+
+
+                    <button class="btn btn-primary my-bg-green-first" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <i class="bi bi-list-task fs-5"></i>
+                    </button>
+
+                    <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasExample"
+                        aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header my-bg-green-secondary text-white">
+                            <h5 class="offcanvas-title fs-5 fw-bold" id="offcanvasExampleLabel">Menu</h5>
+                            <button type="button" class="btn-close fs-4 fw-bold " data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <ul class="offcanvas-body w-100 fs-6 fw-bold " style="min-height: 800px !important;
+                        background: #fff;">
+                            <li class="d-flex align-items-center py-3 border-1 border-bottom my-text-black-first">
+                                <a class="" href="#"> Mở Thẻ Ngân Hàng</a>
+                            </li>
+
+                            <li class="d-flex align-items-center py-3 border-1 border-bottom my-text-black-first">
+                                <a class="" href="#"> Mở Thẻ Ngân Hàng</a>
+                            </li>
+                            <li class="d-flex align-items-center py-3 border-1 border-bottom my-text-black-first">
+                                <a class="" href="#"> Danh Sách Khoản Vay</a>
+                            </li>
+                            <li class="d-flex align-items-center py-3 border-1 border-bottom my-text-black-first">
+                                <a class="" href="#"> Huớng Dẫn Vay</a>
+                            </li>
+                            <li class="d-flex align-items-center py-3 border-1 border-bottom my-text-black-first">
+                                <a class="" href=""> Về Chúng Tôi</a>
+                            </li>
+                            <li class="d-flex align-items-center py-3 border-1 border-bottom my-text-black-first ">
+                                <a class="" href="#"> Liên Hệ</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- <div class="bread-container py-1">
+
+        <div class="my-container-1">
+            <div class="bread " style="">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb fw-medium">
+                        <li class="breadcrumb-item fs-15 "><a class="my-text-green-first"
+                                href="https://vaysieutoc.vn/">Home</a></li>
+                        <li class="breadcrumb-item active fs-14">Vay</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="banner-wrapper mt-2 mt-sm-4">
+        <div class="my-container-1">
+
+            <div class="banner owl-carousel owl-theme w-100 py-2" id="carousel1">
+
+
+                <div class="item__img text-center d-flex justify-content-center" style="">
+                    <img src="public/images/banner2.png" class="object-fit-cover rounded-3"
+                        style="height: 420px;width: 100%; " alt="">
+                </div>
+                <div class="item__img text-center d-flex justify-content-center">
+                    <img src="public/images/banner3.png" class="object-fit-cover rounded-3"
+                        style="height: 420px;width: 100%; " alt="">
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="content-wrapper mb-5" style=" margin-top: 86px !important;">
+        <div class="my-container-1">
+            <div class="content">
+                <h1 class=" my-text-black-third text-center fw-medium" style="font-size: 26px;">TOP NHỮNG GÓI VAY TIÊU
+                    DÙNG ĐƯỢC GIẢI
+                    NGÂN NHANH NHẤT <i class="bi bi-currency-exchange fs-3"></i>
+                </h1>
+
+                <div class="content-main row gx-0 gy-4 g-lg-4 mt-3 ">
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="col-12 col-lg-4 wow animate__animated  animate__backInUp">
+                        <div class="item position-relative px-3 pb-3 " style="border: 1px solid #f0f0f0;
+                        -webkit-box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        border-radius: 5px;">
+                            <a href="https://vaysieutoc.vn/onecredit/">
+                                <div class="item__brand text-center" style="height: 53px;">
+                                    <img src="public/images/logo1.png" class=" object-fit-cover w-auto"
+                                        style="max-height: 100%;" alt="cho-vay-lai-suat-thap">
+                                </div>
+                                <div class="item__title my-text-green-first fw-bold text-center"
+                                    style="font-size: 20px;">
+                                    OneCredit</div>
+                            </a>
+
+                            <div class="item__description mt-4 my-text-black-first ">
+                                <div class="field d-flex justify-content-between  my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-cash"></i> <span class="fs-6 fw-semibold ms-1">Hạn Mức</span>
+                                    </div>
+                                    <div class="field_value">
+                                        1-20 triệu
+                                    </div>
+                                </div>
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-calendar-date"></i> <span class="fs-6 fw-semibold ms-1">Kỳ
+                                            Hạn</span>
+                                    </div>
+                                    <div class="field_value">
+                                        91-182 ngày
+                                    </div>
+
+                                </div>
+
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-currency-dollar"></i> <span class="fs-6 fw-semibold ms-1">Lãi
+                                            Suất</span>
+                                    </div>
+                                    <div class="field_value">
+                                        18%/năm
+                                    </div>
+
+                                </div>
+                            </div>
+                            <a href="https://vaysieutoc.vn/go/onecredit"
+                                class=" d-block item__btn btn my-bg-green-first w-100 text-wh fw-bold " style="color: #fff !important;
+                            
+                            box-shadow: 0 4px 0 0 #098b25;
+                            
+                            
+                            
+                            ">
+
+                                ĐĂNG KÍ NGAY
+                            </a>
+
+                            <div class="item__promotion  position-absolute " style="top:-4%; left: -2%;">
+                                <img src="public/images/promotion.png" style="width: 100px; height: 42px;" alt="">
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-12 col-lg-4 wow animate__animated  animate__backInUp">
+                        <div class="item position-relative px-3 pb-3 " style="border: 1px solid #f0f0f0;
+                        -webkit-box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        border-radius: 5px;">
+                            <a href="https://vaysieutoc.vn/oi-vay/">
+                                <div class="item__brand text-center" style="height: 53px;">
+                                    <img src="public/images/logo2.png" class=" object-fit-cover w-auto"
+                                        style="max-height: 100%;" alt="cho-vay-lai-suat-thap">
+                                </div>
+                                <div class="item__title my-text-green-first fw-bold text-center"
+                                    style="font-size: 20px;">
+                                    Ơi Vay</div>
+                            </a>
+
+                            <div class="item__description mt-4 my-text-black-first ">
+                                <div class="field d-flex justify-content-between  my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-cash"></i> <span class="fs-6 fw-semibold ms-1">Hạn Mức</span>
+                                    </div>
+                                    <div class="field_value">
+                                        1-20 triệu
+                                    </div>
+                                </div>
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-calendar-date"></i> <span class="fs-6 fw-semibold ms-1">Kỳ
+                                            Hạn</span>
+                                    </div>
+                                    <div class="field_value">
+                                        91-182 ngày
+                                    </div>
+
+                                </div>
+
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-currency-dollar"></i> <span class="fs-6 fw-semibold ms-1">Lãi
+                                            Suất</span>
+                                    </div>
+                                    <div class="field_value">
+                                        18%/năm
+                                    </div>
+
+                                </div>
+                            </div>
+                            <a href="https://vaysieutoc.vn/go/oivay"
+                                class=" d-block item__btn btn my-bg-green-first w-100 text-wh fw-bold " style="color: #fff !important;
+                            
+                            box-shadow: 0 4px 0 0 #098b25;
+                            
+                            
+                            
+                            ">
+
+                                ĐĂNG KÍ NGAY
+                            </a>
+
+                            <div class="item__promotion  position-absolute " style="top:-4%; left: -2%;">
+                                <img src="public/images/promotion.png" style="width: 100px; height: 42px;" alt="">
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-lg-4 wow animate__animated  animate__backInUp">
+                        <div class="item position-relative px-3 pb-3 " style="border: 1px solid #f0f0f0;
+                        -webkit-box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        border-radius: 5px;">
+                            <a href="https://vaysieutoc.vn/vdong/">
+                                <div class="item__brand text-center" style="height: 53px;">
+                                    <img src="public/images/logo3.png" class=" object-fit-cover w-auto"
+                                        style="max-height: 100%;" alt="cho-vay-lai-suat-thap">
+                                </div>
+                                <div class="item__title my-text-green-first fw-bold text-center"
+                                    style="font-size: 20px;">
+                                    vĐồng</div>
+                            </a>
+
+                            <div class="item__description mt-4 my-text-black-first ">
+                                <div class="field d-flex justify-content-between  my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-cash"></i> <span class="fs-6 fw-semibold ms-1">Hạn Mức</span>
+                                    </div>
+                                    <div class="field_value">
+                                        1-20 triệu
+                                    </div>
+                                </div>
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-calendar-date"></i> <span class="fs-6 fw-semibold ms-1">Kỳ
+                                            Hạn</span>
+                                    </div>
+                                    <div class="field_value">
+                                        91-182 ngày
+                                    </div>
+
+                                </div>
+
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-currency-dollar"></i> <span class="fs-6 fw-semibold ms-1">Lãi
+                                            Suất</span>
+                                    </div>
+                                    <div class="field_value">
+                                        18%/năm
+                                    </div>
+
+                                </div>
+                            </div>
+                            <a href="https://vaysieutoc.vn/go/vdong"
+                                class=" d-block item__btn btn my-bg-green-first w-100 text-wh fw-bold " style="color: #fff !important;
+                            
+                            box-shadow: 0 4px 0 0 #098b25;
+                            
+                            
+                            
+                            ">
+
+                                ĐĂNG KÍ NGAY
+                            </a>
+
+                            <div class="item__promotion  position-absolute " style="top:-4%; left: -2%;">
+                                <img src="public/images/promotion.png" style="width: 100px; height: 42px;" alt="">
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-lg-4 wow animate__animated  animate__backInUp">
+                        <div class="item position-relative px-3 pb-3 " style="border: 1px solid #f0f0f0;
+                        -webkit-box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        border-radius: 5px;">
+                            <a href="https://vaysieutoc.vn/dongplus/">
+                                <div class="item__brand text-center" style="height: 53px;">
+                                    <img src="public/images/logo4.png" class=" object-fit-cover w-auto"
+                                        style="max-height: 100%;" alt="cho-vay-lai-suat-thap">
+                                </div>
+                                <div class="item__title my-text-green-first fw-bold text-center"
+                                    style="font-size: 20px;">
+                                    DongPlus</div>
+                            </a>
+
+                            <div class="item__description mt-4 my-text-black-first ">
+                                <div class="field d-flex justify-content-between  my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-cash"></i> <span class="fs-6 fw-semibold ms-1">Hạn Mức</span>
+                                    </div>
+                                    <div class="field_value">
+                                        1-20 triệu
+                                    </div>
+                                </div>
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-calendar-date"></i> <span class="fs-6 fw-semibold ms-1">Kỳ
+                                            Hạn</span>
+                                    </div>
+                                    <div class="field_value">
+                                        91-182 ngày
+                                    </div>
+
+                                </div>
+
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-currency-dollar"></i> <span class="fs-6 fw-semibold ms-1">Lãi
+                                            Suất</span>
+                                    </div>
+                                    <div class="field_value">
+                                        18%/năm
+                                    </div>
+
+                                </div>
+                            </div>
+                            <a href="https://vaysieutoc.vn/go/dongplus"
+                                class=" d-block item__btn btn my-bg-green-first w-100 text-wh fw-bold " style="color: #fff !important;
+                            
+                            box-shadow: 0 4px 0 0 #098b25;
+                            
+                            
+                            
+                            ">
+
+                                ĐĂNG KÍ NGAY
+                            </a>
+
+                            <div class="item__promotion  position-absolute " style="top:-4%; left: -2%;">
+                                <img src="public/images/promotion.png" style="width: 100px; height: 42px;" alt="">
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-lg-4 wow animate__animated  animate__backInUp">
+                        <div class="item position-relative px-3 pb-3 " style="border: 1px solid #f0f0f0;
+                        -webkit-box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        border-radius: 5px;">
+                            <a href="https://vaysieutoc.vn/cozmo-money/">
+                                <div class="item__brand text-center" style="height: 53px;">
+                                    <img src="public/images/logo5.png" class=" object-fit-cover w-auto"
+                                        style="max-height: 100%;" alt="cho-vay-lai-suat-thap">
+                                </div>
+                                <div class="item__title my-text-green-first fw-bold text-center"
+                                    style="font-size: 20px;">
+                                    Cozmo Money</div>
+                            </a>
+
+                            <div class="item__description mt-4 my-text-black-first ">
+                                <div class="field d-flex justify-content-between  my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-cash"></i> <span class="fs-6 fw-semibold ms-1">Hạn Mức</span>
+                                    </div>
+                                    <div class="field_value">
+                                        1-20 triệu
+                                    </div>
+                                </div>
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-calendar-date"></i> <span class="fs-6 fw-semibold ms-1">Kỳ
+                                            Hạn</span>
+                                    </div>
+                                    <div class="field_value">
+                                        91-182 ngày
+                                    </div>
+
+                                </div>
+
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-currency-dollar"></i> <span class="fs-6 fw-semibold ms-1">Lãi
+                                            Suất</span>
+                                    </div>
+                                    <div class="field_value">
+                                        18%/năm
+                                    </div>
+
+                                </div>
+                            </div>
+                            <a href="https://vaysieutoc.vn/go/cozmo"
+                                class=" d-block item__btn btn my-bg-green-first w-100 text-wh fw-bold " style="color: #fff !important;
+                            
+                            box-shadow: 0 4px 0 0 #098b25;
+                            
+                            
+                            
+                            ">
+
+                                ĐĂNG KÍ NGAY
+                            </a>
+
+                            <div class="item__promotion  position-absolute " style="top:-4%; left: -2%;">
+                                <img src="public/images/promotion.png" style="width: 100px; height: 42px;" alt="">
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-12 col-lg-4 wow animate__animated  animate__backInUp">
+                        <div class="item position-relative px-3 pb-3 " style="border: 1px solid #f0f0f0;
+                        -webkit-box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        border-radius: 5px;">
+                            <a href="https://vaysieutoc.vn/tinvay/">
+                                <div class="item__brand text-center" style="height: 53px;">
+                                    <img src="public/images/logo6.png" class=" object-fit-cover w-auto"
+                                        style="max-height: 100%;" alt="cho-vay-lai-suat-thap">
+                                </div>
+                                <div class="item__title my-text-green-first fw-bold text-center"
+                                    style="font-size: 20px;">
+                                    Tin Vay</div>
+                            </a>
+
+                            <div class="item__description mt-4 my-text-black-first ">
+                                <div class="field d-flex justify-content-between  my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-cash"></i> <span class="fs-6 fw-semibold ms-1">Hạn Mức</span>
+                                    </div>
+                                    <div class="field_value">
+                                        1-20 triệu
+                                    </div>
+                                </div>
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-calendar-date"></i> <span class="fs-6 fw-semibold ms-1">Kỳ
+                                            Hạn</span>
+                                    </div>
+                                    <div class="field_value">
+                                        91-182 ngày
+                                    </div>
+
+                                </div>
+
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-currency-dollar"></i> <span class="fs-6 fw-semibold ms-1">Lãi
+                                            Suất</span>
+                                    </div>
+                                    <div class="field_value">
+                                        18%/năm
+                                    </div>
+
+                                </div>
+                            </div>
+                            <a href="https://vaysieutoc.vn/go/tinvay/"
+                                class=" d-block item__btn btn my-bg-green-first w-100 text-wh fw-bold " style="color: #fff !important;
+                            
+                            box-shadow: 0 4px 0 0 #098b25;
+                            
+                            
+                            
+                            ">
+
+                                ĐĂNG KÍ NGAY
+                            </a>
+
+                            <div class="item__promotion  position-absolute " style="top:-4%; left: -2%;">
+                                <img src="public/images/promotion.png" style="width: 100px; height: 42px;" alt="">
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-lg-4 wow animate__animated  animate__backInUp">
+                        <div class="item position-relative px-3 pb-3 " style="border: 1px solid #f0f0f0;
+                        -webkit-box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        border-radius: 5px;">
+                            <a href="https://vaysieutoc.vn/tieno/">
+                                <div class="item__brand text-center" style="height: 53px;">
+                                    <img src="public/images/logo7.png" class=" object-fit-cover w-auto"
+                                        style="max-height: 100%;" alt="cho-vay-lai-suat-thap">
+                                </div>
+                                <div class="item__title my-text-green-first fw-bold text-center"
+                                    style="font-size: 20px;">
+                                    Tieno</div>
+                            </a>
+
+                            <div class="item__description mt-4 my-text-black-first ">
+                                <div class="field d-flex justify-content-between  my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-cash"></i> <span class="fs-6 fw-semibold ms-1">Hạn Mức</span>
+                                    </div>
+                                    <div class="field_value">
+                                        1-20 triệu
+                                    </div>
+                                </div>
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-calendar-date"></i> <span class="fs-6 fw-semibold ms-1">Kỳ
+                                            Hạn</span>
+                                    </div>
+                                    <div class="field_value">
+                                        91-182 ngày
+                                    </div>
+
+                                </div>
+
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-currency-dollar"></i> <span class="fs-6 fw-semibold ms-1">Lãi
+                                            Suất</span>
+                                    </div>
+                                    <div class="field_value">
+                                        18%/năm
+                                    </div>
+
+                                </div>
+                            </div>
+                            <a href="https://vaysieutoc.vn/go/tieno/"
+                                class=" d-block item__btn btn my-bg-green-first w-100 text-wh fw-bold " style="color: #fff !important;
+                            
+                            box-shadow: 0 4px 0 0 #098b25;
+                            
+                            
+                            
+                            ">
+
+                                ĐĂNG KÍ NGAY
+                            </a>
+
+                            <div class="item__promotion  position-absolute " style="top:-4%; left: -2%;">
+                                <img src="public/images/promotion.png" style="width: 100px; height: 42px;" alt="">
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-lg-4 wow animate__animated  animate__backInUp">
+                        <div class="item position-relative px-3 pb-3 " style="border: 1px solid #f0f0f0;
+                        -webkit-box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        border-radius: 5px;">
+                            <a href="https://vaysieutoc.vn/cash24/">
+                                <div class="item__brand text-center" style="height: 53px;">
+                                    <img src="public/images/logo8.png" class=" object-fit-cover w-auto"
+                                        style="max-height: 100%;" alt="cho-vay-lai-suat-thap">
+                                </div>
+                                <div class="item__title my-text-green-first fw-bold text-center"
+                                    style="font-size: 20px;">
+                                    Cash24</div>
+                            </a>
+
+                            <div class="item__description mt-4 my-text-black-first ">
+                                <div class="field d-flex justify-content-between  my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-cash"></i> <span class="fs-6 fw-semibold ms-1">Hạn Mức</span>
+                                    </div>
+                                    <div class="field_value">
+                                        1-20 triệu
+                                    </div>
+                                </div>
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-calendar-date"></i> <span class="fs-6 fw-semibold ms-1">Kỳ
+                                            Hạn</span>
+                                    </div>
+                                    <div class="field_value">
+                                        91-182 ngày
+                                    </div>
+
+                                </div>
+
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-currency-dollar"></i> <span class="fs-6 fw-semibold ms-1">Lãi
+                                            Suất</span>
+                                    </div>
+                                    <div class="field_value">
+                                        18%/năm
+                                    </div>
+
+                                </div>
+                            </div>
+                            <a href="https://vaysieutoc.vn/go/cash24/"
+                                class=" d-block item__btn btn my-bg-green-first w-100 text-wh fw-bold " style="color: #fff !important;
+                            
+                            box-shadow: 0 4px 0 0 #098b25;
+                            
+                            
+                            
+                            ">
+
+                                ĐĂNG KÍ NGAY
+                            </a>
+
+                            <div class="item__promotion  position-absolute " style="top:-4%; left: -2%;">
+                                <img src="public/images/promotion.png" style="width: 100px; height: 42px;" alt="">
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-lg-4 wow animate__animated  animate__backInUp">
+                        <div class="item position-relative px-3 pb-3 " style="border: 1px solid #f0f0f0;
+                        -webkit-box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        border-radius: 5px;">
+                            <a href="https://vaysieutoc.vn/moneyveo/">
+                                <div class="item__brand text-center" style="height: 53px;">
+                                    <img src="public/images/logo9.png" class=" object-fit-cover w-auto"
+                                        style="max-height: 100%;" alt="cho-vay-lai-suat-thap">
+                                </div>
+                                <div class="item__title my-text-green-first fw-bold text-center"
+                                    style="font-size: 20px;">
+                                    Moneyveo</div>
+                            </a>
+
+                            <div class="item__description mt-4 my-text-black-first ">
+                                <div class="field d-flex justify-content-between  my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-cash"></i> <span class="fs-6 fw-semibold ms-1">Hạn Mức</span>
+                                    </div>
+                                    <div class="field_value">
+                                        1-20 triệu
+                                    </div>
+                                </div>
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-calendar-date"></i> <span class="fs-6 fw-semibold ms-1">Kỳ
+                                            Hạn</span>
+                                    </div>
+                                    <div class="field_value">
+                                        91-182 ngày
+                                    </div>
+
+                                </div>
+
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-currency-dollar"></i> <span class="fs-6 fw-semibold ms-1">Lãi
+                                            Suất</span>
+                                    </div>
+                                    <div class="field_value">
+                                        18%/năm
+                                    </div>
+
+                                </div>
+                            </div>
+                            <a href="https://vaysieutoc.vn/go/moneyveo/"
+                                class=" d-block item__btn btn my-bg-green-first w-100 text-wh fw-bold " style="color: #fff !important;
+                            
+                            box-shadow: 0 4px 0 0 #098b25;
+                            
+                            
+                            
+                            ">
+
+                                ĐĂNG KÍ NGAY
+                            </a>
+
+                            <div class="item__promotion  position-absolute " style="top:-4%; left: -2%;">
+                                <img src="public/images/promotion.png" style="width: 100px; height: 42px;" alt="">
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-lg-4 wow animate__animated  animate__backInUp">
+                        <div class="item position-relative px-3 pb-3 " style="border: 1px solid #f0f0f0;
+                        -webkit-box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        border-radius: 5px;">
+                            <a href="https://vaysieutoc.vn/senmo/">
+                                <div class="item__brand text-center" style="height: 53px;">
+                                    <img src="public/images/logo10.png" class=" object-fit-cover w-auto"
+                                        style="max-height: 100%;" alt="cho-vay-lai-suat-thap">
+                                </div>
+                                <div class="item__title my-text-green-first fw-bold text-center"
+                                    style="font-size: 20px;">
+                                    Senmo</div>
+                            </a>
+
+                            <div class="item__description mt-4 my-text-black-first ">
+                                <div class="field d-flex justify-content-between  my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-cash"></i> <span class="fs-6 fw-semibold ms-1">Hạn Mức</span>
+                                    </div>
+                                    <div class="field_value">
+                                        1-20 triệu
+                                    </div>
+                                </div>
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-calendar-date"></i> <span class="fs-6 fw-semibold ms-1">Kỳ
+                                            Hạn</span>
+                                    </div>
+                                    <div class="field_value">
+                                        91-182 ngày
+                                    </div>
+
+                                </div>
+
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-currency-dollar"></i> <span class="fs-6 fw-semibold ms-1">Lãi
+                                            Suất</span>
+                                    </div>
+                                    <div class="field_value">
+                                        18%/năm
+                                    </div>
+
+                                </div>
+                            </div>
+                            <a href="https://vaysieutoc.vn/go/senmo/"
+                                class=" d-block item__btn btn my-bg-green-first w-100 text-wh fw-bold " style="color: #fff !important;
+                            
+                            box-shadow: 0 4px 0 0 #098b25;
+                            
+                            
+                            
+                            ">
+
+                                ĐĂNG KÍ NGAY
+                            </a>
+
+                            <div class="item__promotion  position-absolute " style="top:-4%; left: -2%;">
+                                <img src="public/images/promotion.png" style="width: 100px; height: 42px;" alt="">
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-lg-4 wow animate__animated  animate__backInUp">
+                        <div class="item position-relative px-3 pb-3 " style="border: 1px solid #f0f0f0;
+                        -webkit-box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        border-radius: 5px;">
+                            <a href="https://vaysieutoc.vn/doctordong/">
+                                <div class="item__brand text-center" style="height: 53px;">
+                                    <img src="public/images/logo11.png" class=" object-fit-cover w-auto"
+                                        style="max-height: 100%;" alt="cho-vay-lai-suat-thap">
+                                </div>
+                                <div class="item__title my-text-green-first fw-bold text-center"
+                                    style="font-size: 20px;">
+                                    Doctor Đồng</div>
+                            </a>
+
+                            <div class="item__description mt-4 my-text-black-first ">
+                                <div class="field d-flex justify-content-between  my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-cash"></i> <span class="fs-6 fw-semibold ms-1">Hạn Mức</span>
+                                    </div>
+                                    <div class="field_value">
+                                        1-20 triệu
+                                    </div>
+                                </div>
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-calendar-date"></i> <span class="fs-6 fw-semibold ms-1">Kỳ
+                                            Hạn</span>
+                                    </div>
+                                    <div class="field_value">
+                                        91-182 ngày
+                                    </div>
+
+                                </div>
+
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-currency-dollar"></i> <span class="fs-6 fw-semibold ms-1">Lãi
+                                            Suất</span>
+                                    </div>
+                                    <div class="field_value">
+                                        18%/năm
+                                    </div>
+
+                                </div>
+                            </div>
+                            <a href="https://vaysieutoc.vn/go/doctordong/"
+                                class=" d-block item__btn btn my-bg-green-first w-100 text-wh fw-bold " style="color: #fff !important;
+                            
+                            box-shadow: 0 4px 0 0 #098b25;
+                            
+                            
+                            
+                            ">
+
+                                ĐĂNG KÍ NGAY
+                            </a>
+
+                            <div class="item__promotion  position-absolute " style="top:-4%; left: -2%;">
+                                <img src="public/images/promotion.png" style="width: 100px; height: 42px;" alt="">
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-lg-4 wow animate__animated  animate__backInUp">
+                        <div class="item position-relative px-3 pb-3 " style="border: 1px solid #f0f0f0;
+                        -webkit-box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        border-radius: 5px;">
+                            <a href="https://vaysieutoc.vn/moneycat/">
+                                <div class="item__brand text-center" style="height: 53px;">
+                                    <img src="public/images/logo12.png" class=" object-fit-cover w-auto"
+                                        style="max-height: 100%;" alt="cho-vay-lai-suat-thap">
+                                </div>
+                                <div class="item__title my-text-green-first fw-bold text-center"
+                                    style="font-size: 20px;">
+                                    Money Cat</div>
+                            </a>
+
+                            <div class="item__description mt-4 my-text-black-first ">
+                                <div class="field d-flex justify-content-between  my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-cash"></i> <span class="fs-6 fw-semibold ms-1">Hạn Mức</span>
+                                    </div>
+                                    <div class="field_value">
+                                        1-20 triệu
+                                    </div>
+                                </div>
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-calendar-date"></i> <span class="fs-6 fw-semibold ms-1">Kỳ
+                                            Hạn</span>
+                                    </div>
+                                    <div class="field_value">
+                                        91-182 ngày
+                                    </div>
+
+                                </div>
+
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-currency-dollar"></i> <span class="fs-6 fw-semibold ms-1">Lãi
+                                            Suất</span>
+                                    </div>
+                                    <div class="field_value">
+                                        18%/năm
+                                    </div>
+
+                                </div>
+                            </div>
+                            <a href="https://vaysieutoc.vn/go/moneycat/"
+                                class=" d-block item__btn btn my-bg-green-first w-100 text-wh fw-bold " style="color: #fff !important;
+                            
+                            box-shadow: 0 4px 0 0 #098b25;
+                            
+                            
+                            
+                            ">
+
+                                ĐĂNG KÍ NGAY
+                            </a>
+
+                            <div class="item__promotion  position-absolute " style="top:-4%; left: -2%;">
+                                <img src="public/images/promotion.png" style="width: 100px; height: 42px;" alt="">
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-lg-4 wow animate__animated  animate__backInUp">
+                        <div class="item position-relative px-3 pb-3 " style="border: 1px solid #f0f0f0;
+                        -webkit-box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        border-radius: 5px;">
+                            <a href="https://vaysieutoc.vn/robocash/">
+                                <div class="item__brand text-center" style="height: 53px;">
+                                    <img src="public/images/logo13.png" class=" object-fit-cover w-auto"
+                                        style="max-height: 100%;" alt="cho-vay-lai-suat-thap">
+                                </div>
+                                <div class="item__title my-text-green-first fw-bold text-center"
+                                    style="font-size: 20px;">
+                                    Robocash
+                                </div>
+                            </a>
+
+                            <div class="item__description mt-4 my-text-black-first ">
+                                <div class="field d-flex justify-content-between  my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-cash"></i> <span class="fs-6 fw-semibold ms-1">Hạn Mức</span>
+                                    </div>
+                                    <div class="field_value">
+                                        1-20 triệu
+                                    </div>
+                                </div>
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-calendar-date"></i> <span class="fs-6 fw-semibold ms-1">Kỳ
+                                            Hạn</span>
+                                    </div>
+                                    <div class="field_value">
+                                        91-182 ngày
+                                    </div>
+
+                                </div>
+
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-currency-dollar"></i> <span class="fs-6 fw-semibold ms-1">Lãi
+                                            Suất</span>
+                                    </div>
+                                    <div class="field_value">
+                                        18%/năm
+                                    </div>
+
+                                </div>
+                            </div>
+                            <a href="https://vaysieutoc.vn/go/robocash/"
+                                class=" d-block item__btn btn my-bg-green-first w-100 text-wh fw-bold " style="color: #fff !important;
+                            
+                            box-shadow: 0 4px 0 0 #098b25;
+                            
+                            
+                            
+                            ">
+
+                                ĐĂNG KÍ NGAY
+                            </a>
+
+                            <div class="item__promotion  position-absolute " style="top:-4%; left: -2%;">
+                                <img src="public/images/promotion.png" style="width: 100px; height: 42px;" alt="">
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="col-12 col-lg-4 wow animate__animated  animate__backInUp">
+                        <div class="item position-relative px-3 pb-3 " style="border: 1px solid #f0f0f0;
+                        -webkit-box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        border-radius: 5px;">
+                            <a href="https://vaysieutoc.vn/tienoi/">
+                                <div class="item__brand text-center" style="height: 53px;">
+                                    <img src="public/images/logo14.jpg" class=" object-fit-cover w-auto"
+                                        style="max-height: 100%;" alt="cho-vay-lai-suat-thap">
+                                </div>
+                                <div class="item__title my-text-green-first fw-bold text-center"
+                                    style="font-size: 20px;">
+                                    Tiền Ơi</div>
+                            </a>
+
+                            <div class="item__description mt-4 my-text-black-first ">
+                                <div class="field d-flex justify-content-between  my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-cash"></i> <span class="fs-6 fw-semibold ms-1">Hạn Mức</span>
+                                    </div>
+                                    <div class="field_value">
+                                        1-20 triệu
+                                    </div>
+                                </div>
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-calendar-date"></i> <span class="fs-6 fw-semibold ms-1">Kỳ
+                                            Hạn</span>
+                                    </div>
+                                    <div class="field_value">
+                                        91-182 ngày
+                                    </div>
+
+                                </div>
+
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-currency-dollar"></i> <span class="fs-6 fw-semibold ms-1">Lãi
+                                            Suất</span>
+                                    </div>
+                                    <div class="field_value">
+                                        18%/năm
+                                    </div>
+
+                                </div>
+                            </div>
+                            <a href="https://vaysieutoc.vn/go/tienoi/"
+                                class=" d-block item__btn btn my-bg-green-first w-100 text-wh fw-bold " style="color: #fff !important;
+                            
+                            box-shadow: 0 4px 0 0 #098b25;
+                            
+                            
+                            
+                            ">
+
+                                ĐĂNG KÍ NGAY
+                            </a>
+
+                            <div class="item__promotion  position-absolute " style="top:-4%; left: -2%;">
+                                <img src="public/images/promotion.png" style="width: 100px; height: 42px;" alt="">
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-12 col-lg-4 wow animate__animated  animate__backInUp">
+                        <div class="item position-relative px-3 pb-3 " style="border: 1px solid #f0f0f0;
+                        -webkit-box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        border-radius: 5px;">
+                            <a href="https://vaysieutoc.vn/tamo/">
+                                <div class="item__brand text-center" style="height: 53px;">
+                                    <img src="public/images/logo15.png" class=" object-fit-cover w-auto"
+                                        style="max-height: 100%;" alt="cho-vay-lai-suat-thap">
+                                </div>
+                                <div class="item__title my-text-green-first fw-bold text-center"
+                                    style="font-size: 20px;">
+                                    Tamo</div>
+                            </a>
+
+                            <div class="item__description mt-4 my-text-black-first ">
+                                <div class="field d-flex justify-content-between  my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-cash"></i> <span class="fs-6 fw-semibold ms-1">Hạn Mức</span>
+                                    </div>
+                                    <div class="field_value">
+                                        1-20 triệu
+                                    </div>
+                                </div>
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-calendar-date"></i> <span class="fs-6 fw-semibold ms-1">Kỳ
+                                            Hạn</span>
+                                    </div>
+                                    <div class="field_value">
+                                        91-182 ngày
+                                    </div>
+
+                                </div>
+
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-currency-dollar"></i> <span class="fs-6 fw-semibold ms-1">Lãi
+                                            Suất</span>
+                                    </div>
+                                    <div class="field_value">
+                                        18%/năm
+                                    </div>
+
+                                </div>
+                            </div>
+                            <a href="https://vaysieutoc.vn/go/tamo/"
+                                class=" d-block item__btn btn my-bg-green-first w-100 text-wh fw-bold " style="color: #fff !important;
+                            
+                            box-shadow: 0 4px 0 0 #098b25;
+                            
+                            
+                            
+                            ">
+
+                                ĐĂNG KÍ NGAY
+                            </a>
+
+                            <div class="item__promotion  position-absolute " style="top:-4%; left: -2%;">
+                                <img src="public/images/promotion.png" style="width: 100px; height: 42px;" alt="">
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="col-12 col-lg-4 wow animate__animated  animate__backInUp">
+                        <div class="item position-relative px-3 pb-3 " style="border: 1px solid #f0f0f0;
+                        -webkit-box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        border-radius: 5px;">
+                            <a href="https://vaysieutoc.vn/vamo/">
+                                <div class="item__brand text-center" style="height: 53px;">
+                                    <img src="public/images/logo16.png" class=" object-fit-cover w-auto"
+                                        style="max-height: 100%;" alt="cho-vay-lai-suat-thap">
+                                </div>
+                                <div class="item__title my-text-green-first fw-bold text-center"
+                                    style="font-size: 20px;">
+                                    Vamo</div>
+                            </a>
+
+                            <div class="item__description mt-4 my-text-black-first ">
+                                <div class="field d-flex justify-content-between  my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-cash"></i> <span class="fs-6 fw-semibold ms-1">Hạn Mức</span>
+                                    </div>
+                                    <div class="field_value">
+                                        1-20 triệu
+                                    </div>
+                                </div>
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-calendar-date"></i> <span class="fs-6 fw-semibold ms-1">Kỳ
+                                            Hạn</span>
+                                    </div>
+                                    <div class="field_value">
+                                        91-182 ngày
+                                    </div>
+
+                                </div>
+
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-currency-dollar"></i> <span class="fs-6 fw-semibold ms-1">Lãi
+                                            Suất</span>
+                                    </div>
+                                    <div class="field_value">
+                                        18%/năm
+                                    </div>
+
+                                </div>
+                            </div>
+                            <a href="https://vaysieutoc.vn/go/vamo/"
+                                class=" d-block item__btn btn my-bg-green-first w-100 text-wh fw-bold " style="color: #fff !important;
+                            
+                            box-shadow: 0 4px 0 0 #098b25;
+                            
+                            
+                            
+                            ">
+
+                                ĐĂNG KÍ NGAY
+                            </a>
+
+                            <div class="item__promotion  position-absolute " style="top:-4%; left: -2%;">
+                                <img src="public/images/promotion.png" style="width: 100px; height: 42px;" alt="">
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-12 col-lg-4 wow animate__animated  animate__backInUp">
+                        <div class="item position-relative px-3 pb-3 " style="border: 1px solid #f0f0f0;
+                        -webkit-box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        border-radius: 5px;">
+                            <a href="https://vaysieutoc.vn/findo/">
+                                <div class="item__brand text-center" style="height: 53px;">
+                                    <img src="public/images/logo17.png" class=" object-fit-cover w-auto"
+                                        style="max-height: 100%;" alt="cho-vay-lai-suat-thap">
+                                </div>
+                                <div class="item__title my-text-green-first fw-bold text-center"
+                                    style="font-size: 20px;">
+                                    Findo</div>
+                            </a>
+
+                            <div class="item__description mt-4 my-text-black-first ">
+                                <div class="field d-flex justify-content-between  my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-cash"></i> <span class="fs-6 fw-semibold ms-1">Hạn Mức</span>
+                                    </div>
+                                    <div class="field_value">
+                                        1-20 triệu
+                                    </div>
+                                </div>
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-calendar-date"></i> <span class="fs-6 fw-semibold ms-1">Kỳ
+                                            Hạn</span>
+                                    </div>
+                                    <div class="field_value">
+                                        91-182 ngày
+                                    </div>
+
+                                </div>
+
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-currency-dollar"></i> <span class="fs-6 fw-semibold ms-1">Lãi
+                                            Suất</span>
+                                    </div>
+                                    <div class="field_value">
+                                        18%/năm
+                                    </div>
+
+                                </div>
+                            </div>
+                            <a href="https://vaysieutoc.vn/go/findo/"
+                                class=" d-block item__btn btn my-bg-green-first w-100 text-wh fw-bold " style="color: #fff !important;
+                            
+                            box-shadow: 0 4px 0 0 #098b25;
+                            
+                            
+                            
+                            ">
+
+                                ĐĂNG KÍ NGAY
+                            </a>
+
+                            <div class="item__promotion  position-absolute " style="top:-4%; left: -2%;">
+                                <img src="public/images/promotion.png" style="width: 100px; height: 42px;" alt="">
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-12 col-lg-4 wow animate__animated  animate__backInUp">
+                        <div class="item position-relative px-3 pb-3 " style="border: 1px solid #f0f0f0;
+                        -webkit-box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        border-radius: 5px;">
+                            <a href="https://vaysieutoc.vn/vayvnd/">
+                                <div class="item__brand text-center" style="height: 53px;">
+                                    <img src="public/images/logo18.jpg" class=" object-fit-cover w-auto"
+                                        style="max-height: 100%;" alt="cho-vay-lai-suat-thap">
+                                </div>
+                                <div class="item__title my-text-green-first fw-bold text-center"
+                                    style="font-size: 20px;">
+                                    Vayvnd</div>
+                            </a>
+
+                            <div class="item__description mt-4 my-text-black-first ">
+                                <div class="field d-flex justify-content-between  my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-cash"></i> <span class="fs-6 fw-semibold ms-1">Hạn Mức</span>
+                                    </div>
+                                    <div class="field_value">
+                                        1-20 triệu
+                                    </div>
+                                </div>
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-calendar-date"></i> <span class="fs-6 fw-semibold ms-1">Kỳ
+                                            Hạn</span>
+                                    </div>
+                                    <div class="field_value">
+                                        91-182 ngày
+                                    </div>
+
+                                </div>
+
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-currency-dollar"></i> <span class="fs-6 fw-semibold ms-1">Lãi
+                                            Suất</span>
+                                    </div>
+                                    <div class="field_value">
+                                        18%/năm
+                                    </div>
+
+                                </div>
+                            </div>
+                            <a href="https://vaysieutoc.vn/go/vayvnd/"
+                                class=" d-block item__btn btn my-bg-green-first w-100 text-wh fw-bold " style="color: #fff !important;
+                            
+                            box-shadow: 0 4px 0 0 #098b25;
+                            
+                            
+                            
+                            ">
+
+                                ĐĂNG KÍ NGAY
+                            </a>
+
+                            <div class="item__promotion  position-absolute " style="top:-4%; left: -2%;">
+                                <img src="public/images/promotion.png" style="width: 100px; height: 42px;" alt="">
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-lg-4 wow animate__animated  animate__backInUp">
+                        <div class="item position-relative px-3 pb-3 " style="border: 1px solid #f0f0f0;
+                        -webkit-box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        border-radius: 5px;">
+                            <a href="https://vaysieutoc.vn/oncredit/">
+                                <div class="item__brand text-center" style="height: 53px;">
+                                    <img src="public/images/logo19.png" class=" object-fit-cover w-auto"
+                                        style="max-height: 100%;" alt="cho-vay-lai-suat-thap">
+                                </div>
+                                <div class="item__title my-text-green-first fw-bold text-center"
+                                    style="font-size: 20px;">
+                                    OnCredit</div>
+                            </a>
+
+                            <div class="item__description mt-4 my-text-black-first ">
+                                <div class="field d-flex justify-content-between  my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-cash"></i> <span class="fs-6 fw-semibold ms-1">Hạn Mức</span>
+                                    </div>
+                                    <div class="field_value">
+                                        1-20 triệu
+                                    </div>
+                                </div>
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-calendar-date"></i> <span class="fs-6 fw-semibold ms-1">Kỳ
+                                            Hạn</span>
+                                    </div>
+                                    <div class="field_value">
+                                        91-182 ngày
+                                    </div>
+
+                                </div>
+
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-currency-dollar"></i> <span class="fs-6 fw-semibold ms-1">Lãi
+                                            Suất</span>
+                                    </div>
+                                    <div class="field_value">
+                                        18%/năm
+                                    </div>
+
+                                </div>
+                            </div>
+                            <a href="https://vaysieutoc.vn/go/oncredit/"
+                                class=" d-block item__btn btn my-bg-green-first w-100 text-wh fw-bold " style="color: #fff !important;
+                            
+                            box-shadow: 0 4px 0 0 #098b25;
+                            
+                            
+                            
+                            ">
+
+                                ĐĂNG KÍ NGAY
+                            </a>
+
+                            <div class="item__promotion  position-absolute " style="top:-4%; left: -2%;">
+                                <img src="public/images/promotion.png" style="width: 100px; height: 42px;" alt="">
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-lg-4 wow animate__animated  animate__backInUp">
+                        <div class="item position-relative px-3 pb-3 " style="border: 1px solid #f0f0f0;
+                        -webkit-box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        border-radius: 5px;">
+                            <a href="https://vaysieutoc.vn/takomo/">
+                                <div class="item__brand text-center" style="height: 53px;">
+                                    <img src="public/images/logo20.png" class=" object-fit-cover w-auto"
+                                        style="max-height: 100%;" alt="cho-vay-lai-suat-thap">
+                                </div>
+                                <div class="item__title my-text-green-first fw-bold text-center"
+                                    style="font-size: 20px;">
+                                    Takomo</div>
+                            </a>
+
+                            <div class="item__description mt-4 my-text-black-first ">
+                                <div class="field d-flex justify-content-between  my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-cash"></i> <span class="fs-6 fw-semibold ms-1">Hạn Mức</span>
+                                    </div>
+                                    <div class="field_value">
+                                        1-20 triệu
+                                    </div>
+                                </div>
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-calendar-date"></i> <span class="fs-6 fw-semibold ms-1">Kỳ
+                                            Hạn</span>
+                                    </div>
+                                    <div class="field_value">
+                                        91-182 ngày
+                                    </div>
+
+                                </div>
+
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-currency-dollar"></i> <span class="fs-6 fw-semibold ms-1">Lãi
+                                            Suất</span>
+                                    </div>
+                                    <div class="field_value">
+                                        18%/năm
+                                    </div>
+
+                                </div>
+                            </div>
+                            <a href="https://vaysieutoc.vn/go/takomo/"
+                                class=" d-block item__btn btn my-bg-green-first w-100 text-wh fw-bold " style="color: #fff !important;
+                            
+                            box-shadow: 0 4px 0 0 #098b25;
+                            
+                            
+                            
+                            ">
+
+                                ĐĂNG KÍ NGAY
+                            </a>
+
+                            <div class="item__promotion  position-absolute " style="top:-4%; left: -2%;">
+                                <img src="public/images/promotion.png" style="width: 100px; height: 42px;" alt="">
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-lg-4 wow animate__animated  animate__backInUp">
+                        <div class="item position-relative px-3 pb-3 " style="border: 1px solid #f0f0f0;
+                        -webkit-box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        border-radius: 5px;">
+                            <a href="https://vaysieutoc.vn/atmonline/">
+                                <div class="item__brand text-center" style="height: 53px;">
+                                    <img src="public/images/logo21.png" class=" object-fit-cover w-auto"
+                                        style="max-height: 100%;" alt="cho-vay-lai-suat-thap">
+                                </div>
+                                <div class="item__title my-text-green-first fw-bold text-center"
+                                    style="font-size: 20px;">
+                                    Atm Online</div>
+                            </a>
+
+                            <div class="item__description mt-4 my-text-black-first ">
+                                <div class="field d-flex justify-content-between  my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-cash"></i> <span class="fs-6 fw-semibold ms-1">Hạn Mức</span>
+                                    </div>
+                                    <div class="field_value">
+                                        1-20 triệu
+                                    </div>
+                                </div>
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-calendar-date"></i> <span class="fs-6 fw-semibold ms-1">Kỳ
+                                            Hạn</span>
+                                    </div>
+                                    <div class="field_value">
+                                        91-182 ngày
+                                    </div>
+
+                                </div>
+
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-currency-dollar"></i> <span class="fs-6 fw-semibold ms-1">Lãi
+                                            Suất</span>
+                                    </div>
+                                    <div class="field_value">
+                                        18%/năm
+                                    </div>
+
+                                </div>
+                            </div>
+                            <a href="https://vaysieutoc.vn/go/atmonline/"
+                                class=" d-block item__btn btn my-bg-green-first w-100 text-wh fw-bold " style="color: #fff !important;
+                            
+                            box-shadow: 0 4px 0 0 #098b25;
+                            
+                            
+                            
+                            ">
+
+                                ĐĂNG KÍ NGAY
+                            </a>
+
+                            <div class="item__promotion  position-absolute " style="top:-4%; left: -2%;">
+                                <img src="public/images/promotion.png" style="width: 100px; height: 42px;" alt="">
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="content-bank-wrapper my-5" style=" margin-top: 86px !important;">
+        <div class="my-container-1">
+            <div class="content">
+                <h1 class=" my-text-black-third text-center fw-medium" style="font-size: 26px;">Mở Thẻ Ngân Hàng Số Đẹp
+                    <i class="bi bi-bank fs-3"></i>
+                </h1>
+
+                <div class="content-main row gx-0 gy-4 g-lg-4 mt-5 ">
+
+
+
+
+
+
+                    <div class="col-12 col-lg-4 wow animate__animated  animate__backInUp">
+                        <div class="item position-relative px-3 pb-3 " style="border: 1px solid #f0f0f0;
+                        -webkit-box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        border-radius: 5px;">
+                            <a href="/register.html">
+                                <div class="item__brand text-center" style="height: 56px;">
+                                    <img src="public/images/bank1.png" class=" object-fit-cover w-auto"
+                                        style="max-height: 100%;" alt="cho-vay-lai-suat-thap">
+                                </div>
+                                <div class="item__title my-text-green-first fw-bold text-center"
+                                    style="font-size: 20px;">
+                                    Thẻ MB Bank</div>
+                            </a>
+
+                            <div class="item__description mt-4 my-text-black-first ">
+                                <div class="field d-flex justify-content-between  my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-cash"></i> <span class="fs-6 fw-semibold ms-1">Hạn Mức</span>
+                                    </div>
+                                    <div class="field_value">
+                                        1-20 triệu
+                                    </div>
+                                </div>
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-calendar-date"></i> <span class="fs-6 fw-semibold ms-1">Kỳ
+                                            Hạn</span>
+                                    </div>
+                                    <div class="field_value">
+                                        91-182 ngày
+                                    </div>
+
+                                </div>
+
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-currency-dollar"></i> <span class="fs-6 fw-semibold ms-1">Lãi
+                                            Suất</span>
+                                    </div>
+                                    <div class="field_value">
+                                        18%/năm
+                                    </div>
+
+                                </div>
+                            </div>
+                            <a href="https://hyperlead.tech/hlt1CF"
+                                class=" d-block item__btn btn my-bg-green-first w-100 text-wh fw-bold " style="color: #fff !important;
+                            
+                            box-shadow: 0 4px 0 0 #098b25;
+                            
+                            
+                            
+                            ">
+
+                                ĐĂNG KÍ NGAY
+                            </a>
+
+                            <div class="item__promotion  position-absolute " style="top:-4%; left: -2%;">
+                                <img src="public/images/promotion.png" style="width: 100px; height: 42px;" alt="">
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-lg-4 wow animate__animated  animate__backInUp">
+                        <div class="item position-relative px-3 pb-3 " style="border: 1px solid #f0f0f0;
+                        -webkit-box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        border-radius: 5px;">
+                            <a href="/register.html">
+                                <div class="item__brand text-center" style="height: 56px;">
+                                    <img src="public/images/bank2.png" class=" object-fit-cover w-auto"
+                                        style="max-height: 100%;" alt="cho-vay-lai-suat-thap">
+                                </div>
+                                <div class="item__title my-text-green-first fw-bold text-center"
+                                    style="font-size: 20px;">
+                                    Thẻ Tecchombank</div>
+                            </a>
+
+                            <div class="item__description mt-4 my-text-black-first ">
+                                <div class="field d-flex justify-content-between  my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-cash"></i> <span class="fs-6 fw-semibold ms-1">Hạn Mức</span>
+                                    </div>
+                                    <div class="field_value">
+                                        1-20 triệu
+                                    </div>
+                                </div>
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-calendar-date"></i> <span class="fs-6 fw-semibold ms-1">Kỳ
+                                            Hạn</span>
+                                    </div>
+                                    <div class="field_value">
+                                        91-182 ngày
+                                    </div>
+
+                                </div>
+
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-currency-dollar"></i> <span class="fs-6 fw-semibold ms-1">Lãi
+                                            Suất</span>
+                                    </div>
+                                    <div class="field_value">
+                                        18%/năm
+                                    </div>
+
+                                </div>
+                            </div>
+                            <a href="https://hyperlead.tech/hlE69C"
+                                class=" d-block item__btn btn my-bg-green-first w-100 text-wh fw-bold " style="color: #fff !important;
+                            
+                            box-shadow: 0 4px 0 0 #098b25;
+                            
+                            
+                            
+                            ">
+
+                                ĐĂNG KÍ NGAY
+                            </a>
+
+                            <div class="item__promotion  position-absolute " style="top:-4%; left: -2%;">
+                                <img src="public/images/promotion.png" style="width: 100px; height: 42px;" alt="">
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-lg-4 wow animate__animated  animate__backInUp">
+                        <div class="item position-relative px-3 pb-3 " style="border: 1px solid #f0f0f0;
+                        -webkit-box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        border-radius: 5px;">
+                            <a href="/register.html">
+                                <div class="item__brand text-center" style="height: 56px;">
+                                    <img src="public/images/bank3.png" class=" object-fit-cover w-auto"
+                                        style="max-height: 100%;" alt="cho-vay-lai-suat-thap">
+                                </div>
+                                <div class="item__title my-text-green-first fw-bold text-center"
+                                    style="font-size: 20px;">
+                                    Thẻ BIDV</div>
+                            </a>
+
+                            <div class="item__description mt-4 my-text-black-first ">
+                                <div class="field d-flex justify-content-between  my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-cash"></i> <span class="fs-6 fw-semibold ms-1">Hạn Mức</span>
+                                    </div>
+                                    <div class="field_value">
+                                        1-20 triệu
+                                    </div>
+                                </div>
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-calendar-date"></i> <span class="fs-6 fw-semibold ms-1">Kỳ
+                                            Hạn</span>
+                                    </div>
+                                    <div class="field_value">
+                                        91-182 ngày
+                                    </div>
+
+                                </div>
+
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-currency-dollar"></i> <span class="fs-6 fw-semibold ms-1">Lãi
+                                            Suất</span>
+                                    </div>
+                                    <div class="field_value">
+                                        18%/năm
+                                    </div>
+
+                                </div>
+                            </div>
+                            <a href="https://hyperlead.tech/hlKWUW"
+                                class=" d-block item__btn btn my-bg-green-first w-100 text-wh fw-bold " style="color: #fff !important;
+                            
+                            box-shadow: 0 4px 0 0 #098b25;
+                            
+                            
+                            
+                            ">
+
+                                ĐĂNG KÍ NGAY
+                            </a>
+
+                            <div class="item__promotion  position-absolute " style="top:-4%; left: -2%;">
+                                <img src="public/images/promotion.png" style="width: 100px; height: 42px;" alt="">
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-lg-4 wow animate__animated  animate__backInUp">
+                        <div class="item position-relative px-3 pb-3 " style="border: 1px solid #f0f0f0;
+                        -webkit-box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        border-radius: 5px;">
+                            <a href="/register.html">
+                                <div class="item__brand text-center" style="height: 56px;">
+                                    <img src="public/images/bank5.png" class=" object-fit-cover w-auto"
+                                        style="max-height: 100%;" alt="cho-vay-lai-suat-thap">
+                                </div>
+                                <div class="item__title my-text-green-first fw-bold text-center"
+                                    style="font-size: 20px;">
+                                    Thẻ Ngân Hàng Số Cake</div>
+                            </a>
+
+                            <div class="item__description mt-4 my-text-black-first ">
+                                <div class="field d-flex justify-content-between  my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-cash"></i> <span class="fs-6 fw-semibold ms-1">Hạn Mức</span>
+                                    </div>
+                                    <div class="field_value">
+                                        1-20 triệu
+                                    </div>
+                                </div>
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-calendar-date"></i> <span class="fs-6 fw-semibold ms-1">Kỳ
+                                            Hạn</span>
+                                    </div>
+                                    <div class="field_value">
+                                        91-182 ngày
+                                    </div>
+
+                                </div>
+
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-currency-dollar"></i> <span class="fs-6 fw-semibold ms-1">Lãi
+                                            Suất</span>
+                                    </div>
+                                    <div class="field_value">
+                                        18%/năm
+                                    </div>
+
+                                </div>
+                            </div>
+                            <a href="https://hyperlead.tech/hlGtdX"
+                                class=" d-block item__btn btn my-bg-green-first w-100 text-wh fw-bold " style="color: #fff !important;
+                            
+                            box-shadow: 0 4px 0 0 #098b25;
+                            
+                            
+                            
+                            ">
+
+                                ĐĂNG KÍ NGAY
+                            </a>
+
+                            <div class="item__promotion  position-absolute " style="top:-4%; left: -2%;">
+                                <img src="public/images/promotion.png" style="width: 100px; height: 42px;" alt="">
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-lg-4 wow animate__animated  animate__backInUp">
+                        <div class="item position-relative px-3 pb-3 " style="border: 1px solid #f0f0f0;
+                        -webkit-box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        border-radius: 5px;">
+                            <a href="/register.html">
+                                <div class="item__brand text-center" style="height: 56px;">
+                                    <img src="public/images/bank5.png" class=" object-fit-cover w-auto"
+                                        style="max-height: 100%;" alt="cho-vay-lai-suat-thap">
+                                </div>
+                                <div class="item__title my-text-green-first fw-bold text-center"
+                                    style="font-size: 20px;">
+                                    Thẻ VPBanh</div>
+                            </a>
+
+                            <div class="item__description mt-4 my-text-black-first ">
+                                <div class="field d-flex justify-content-between  my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-cash"></i> <span class="fs-6 fw-semibold ms-1">Hạn Mức</span>
+                                    </div>
+                                    <div class="field_value">
+                                        1-20 triệu
+                                    </div>
+                                </div>
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-calendar-date"></i> <span class="fs-6 fw-semibold ms-1">Kỳ
+                                            Hạn</span>
+                                    </div>
+                                    <div class="field_value">
+                                        91-182 ngày
+                                    </div>
+
+                                </div>
+
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-currency-dollar"></i> <span class="fs-6 fw-semibold ms-1">Lãi
+                                            Suất</span>
+                                    </div>
+                                    <div class="field_value">
+                                        18%/năm
+                                    </div>
+
+                                </div>
+                            </div>
+                            <a href="https://hyperlead.tech/hlKWUW"
+                                class=" d-block item__btn btn my-bg-green-first w-100 text-wh fw-bold " style="color: #fff !important;
+                            
+                            box-shadow: 0 4px 0 0 #098b25;
+                            
+                            
+                            
+                            ">
+
+                                ĐĂNG KÍ NGAY
+                            </a>
+
+                            <div class="item__promotion  position-absolute " style="top:-4%; left: -2%;">
+                                <img src="public/images/promotion.png" style="width: 100px; height: 42px;" alt="">
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-lg-4 wow animate__animated  animate__backInUp">
+                        <div class="item position-relative px-3 pb-3 " style="border: 1px solid #f0f0f0;
+                        -webkit-box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                        border-radius: 5px;">
+                            <a href="/register.html">
+                                <div class="item__brand text-center" style="height: 56px;">
+                                    <img src="public/images/bank6.png" class=" object-fit-cover w-auto"
+                                        style="max-height: 100%;" alt="cho-vay-lai-suat-thap">
+                                </div>
+                                <div class="item__title my-text-green-first fw-bold text-center"
+                                    style="font-size: 20px;">
+                                    VN PAY-Tặng KH mới 50K</div>
+                            </a>
+
+                            <div class="item__description mt-4 my-text-black-first ">
+                                <div class="field d-flex justify-content-between  my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-cash"></i> <span class="fs-6 fw-semibold ms-1">Hạn Mức</span>
+                                    </div>
+                                    <div class="field_value">
+                                        1-20 triệu
+                                    </div>
+                                </div>
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-calendar-date"></i> <span class="fs-6 fw-semibold ms-1">Kỳ
+                                            Hạn</span>
+                                    </div>
+                                    <div class="field_value">
+                                        91-182 ngày
+                                    </div>
+
+                                </div>
+
+                                <div class="field d-flex justify-content-between my-3 ">
+                                    <div class="field__name  fw-bold d-flex align-content-center">
+                                        <i class="bi bi-currency-dollar"></i> <span class="fs-6 fw-semibold ms-1">Lãi
+                                            Suất</span>
+                                    </div>
+                                    <div class="field_value">
+                                        18%/năm
+                                    </div>
+
+                                </div>
+                            </div>
+                            <a href="https://shorten.asia/3dSQrxYu"
+                                class=" d-block item__btn btn my-bg-green-first w-100 text-wh fw-bold " style="color: #fff !important;
+                            
+                            box-shadow: 0 4px 0 0 #098b25;
+                            
+                            
+                            
+                            ">
+
+                                ĐĂNG KÍ NGAY
+                            </a>
+
+                            <div class="item__promotion  position-absolute " style="top:-4%; left: -2%;">
+                                <img src="public/images/promotion.png" style="width: 100px; height: 42px;" alt="">
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="lend-money-wrapper" style="background-color: rgb(249, 249, 249);">
+
+        <div class="my-container-1">
+
+            <div class="lend-money text-center pt-3 mx-auto " style="width: 70%;">
+
+                <h1 class="mt-3 fs-4 fw-semibold my-text-black-first">Vay Tiền Online ,Bạn Cần</h1>
+
+
+                <div class="lend-money-main row g-5 mt-2 flex-wrap">
+                    <div class="col-sm-6 ">
+                        <div class="card-info shadow-sm d-flex justify-content-between align-items-center p-4">
+                            <img src="public/images/cmnd.png" alt="">
+                            <span class="text-start ms-3 lh-base">
+                                CMND/ Thẻ CCCD còn thời hạn, dễ nhìn, không mờ số.
+                            </span>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-6 ">
+                        <div class="card-info shadow-sm d-flex justify-content-between align-items-center p-4">
+                            <img src="public/images/cmnd.png" alt="">
+                            <span class="text-start ms-3 lh-base">
+                                Công dân Việt Nam, có công việc mang lại thu nhập ổn định.
+                            </span>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-6 ">
+                        <div class="card-info shadow-sm d-flex justify-content-between align-items-center p-4">
+                            <img src="public/images/cmnd.png" alt="">
+                            <span class="text-start ms-3 lh-base">
+                                Về độ tuổi, bạn phải ít nhất 18 tuổi trở lên, phù hợp nhận khoản vay.
+                            </span>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-6 ">
+                        <div class="card-info shadow-sm d-flex justify-content-between align-items-center p-4">
+                            <img src="public/images/cmnd.png" alt="">
+                            <span class="text-start ms-3 lh-base">
+                                Tài khoản ngân hàng mang tên bạn.
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <div class="procress-lend-wrapper mx-auto mt-5" style="width: 82%;">
+        <div class="my-container-1 ">
+            <div class="process-lend row align-items-start">
+
+                <div class="col-12 col-sm-6">
+                    <div class="procress-lend-left ">
+                        <img src="public/images/lend money.png" class="w-100 h-auto object-fit-cover" alt="">
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6">
+                    <div class="procedure">
+                        <h2 class="mt-3 fs-3 fw-semibold  text-center my-text-green-first"> Quy Trình
+                            Vay Tiền Nhanh</h2>
+
+
+                        <p class="mt-4">Vay dễ dàng với 4 bước đơn giản</p>
+
+                        <div class="item mt-3">
+                            <i class="bi bi-check-circle-fill my-text-green-first"></i>
+                            <span class="fw-bold">Chọn sản phẩm vay</span>
+
+                            <p class="lh-base mt-2">Chọn sản phẩm vay online phù hợp với nhu cầu tài chính của bản
+                                thân.</p>
+                        </div>
+                        <div class="item mt-3">
+                            <i class="bi bi-check-circle-fill my-text-green-first"></i>
+                            <span class="fw-bold">Đăng ký hồ sơ vay</span>
+
+                            <p class="lh-base mt-2">Điền đầy đủ thông tin đăng ký & chụp hình cá nhân cùng với CMND/
+                                CCCD của bạn.</p>
+                        </div>
+                        <div class="item mt-3">
+                            <i class="bi bi-check-circle-fill my-text-green-first"></i>
+                            <span class="fw-bold">
+                                Xét duyệt khoản vay</span>
+
+                            <p class="lh-base mt-2">Nhận thông báo kết quả duyệt vay thông qua SMS hoặc Email nhanh
+                                chóng trong vài phút.</p>
+                        </div>
+                        <div class="item mt-3">
+                            <i class="bi bi-check-circle-fill my-text-green-first"></i>
+                            <span class="fw-bold">
+
+                                Giải ngân khoản vay</span>
+
+                            <p class="lh-base mt-2">Sau khi hồ sơ vay được duyệt, số tiền sẽ được chuyển qua tài khoản
+                                ngân hàng mà bạn đăng ký.</p>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="footer-wrapper my-text-green-first pb-3 pt-5" style="background-color: rgb(249, 249, 249);">
+
+        <div class="my-container-1">
+            <div class="footer d-flex justify-content-between align-items-center flex-wrap">
+
+                <div class="footer-logo" style="width: 25%;">
+                    <img src="public/images/logoVaytot2.png" style="width: 129px;" class="h-auto"
+                        alt="logo-vay-sieu-toc">
+                </div>
+
+                <ul class="footer-info fs-14 d-flex  fw-semibold align-items-center d-lg-flex justify-content-lg-center"
+                    style="width: 60%;">
+                    <li class="mx-3"><a href="https://vaysieutoc.vn/dieu-khoan/">Điều khoản sử dụng</a></li>
+                    <li class="d-sm-none text-black mx-1">|</li>
+                    <li class="mx-3"><a href="https://vaysieutoc.vn/chinh-sach-bao-mat/">Chính sách bảo mật</a></li>
+                    <li class="mx-3 schema-website"><a href="https://vaysieutoc.vn/sitemap_index.xml">Sơ đồ website</a>
+                    </li>
+                </ul>
+                <div class="footer-social d-flex align-items-center " style="width: 15%;">
+                    <a href="#" data-toggle="tooltip" title="Follow in facebook"><i class="bi bi-facebook mx-1"></i></a>
+                    <a href="#" data-toggle="tooltip" title="Follow in instagram"><i
+                            class="bi bi-instagram  mx-1"></i></a>
+
+                    <a href="#" data-toggle="tooltip" title="Follow in pinterest"><i
+                            class="bi bi-pinterest  mx-1"></i></a>
+
+                    <a href="#" data-toggle="tooltip" title="Follow in twitter"><i class="bi bi-twitter mx-1"></i></a>
+                    <a href="#" data-toggle="tooltip" title="Follow in youtobe"><i class="bi bi-youtube mx-1"></i></a>
+
+
+                </div>
+
+                <!-- <ul class="footer-brand mt-5 d-block d-flex w-100">
+
+
+                    <li><a href="https://vaysieutoc.vn/moneyveo/">Moneyveo</a></li>
+
+                    <li><a href="https://vaysieutoc.vn/tienoi/">Tiền Ơi</a>
+                    </li>
+                    <li><a href="https://vaysieutoc.vn/cash24/">Cash24</a>
+                    </li>
+                    <li><a href="https://vaysieutoc.vn/vdong/">vĐồng</a>
+                    </li>
+                    <li><a href="https://vaysieutoc.vn/robocash/">Robocash</a></li>
+                    <li><a href="https://vaysieutoc.vn/takomo/">Takomo</a>
+                    </li>
+                    <li><a href="https://vaysieutoc.vn/oncredit/">OnCredit</a></li>
+                    <li><a href="https://vaysieutoc.vn/tieno/">Tieno</a>
+                    </li>
+                    <li><a href="https://vaysieutoc.vn/moneycat/">Moneycat</a></li>
+                    <li><a href="https://vaysieutoc.vn/doctordong/">DoctorDong</a></li>
+
+
+                    <li> <a href="https://vaysieutoc.vn/atmonline/"></a> Atm Online</li>
+
+
+                    <li><a href="https://vaysieutoc.vn/dongplus/">Dongplus</a></li>
+                    <li><a href="https://vaysieutoc.vn/vay-gap/">Vaygap</a>
+                    </li>
+                    <li><a href="https://vaysieutoc.vn/cozmo-money/">Cozmo</a></li>
+                    <li><a href="https://vaysieutoc.vn/vamo/">Vamo</a>
+                    </li>
+                    <li><a href="https://vaysieutoc.vn/vayvnd/">Vayvnd</a>
+
+                    </li>
+
+
+
+
+                </ul> -->
+
+                <div class="footer-policy pb-3 border-bottom border-1"
+                    style="margin-top: 64px;font-size: 11px !important; color: #999999;">
+                    <p class="lh-lg">
+                        vaysieutoc.vn là dịch vụ hỗ trợ vay tiền online siêu tốc giải ngân nhanh trong ngày chỉ cần CMND
+                        (thẻ CCCD), nhận tiền qua tài khoản ngân hàng không cần gặp mặt.vaysieutoc.vn không phải là bên
+                        cho vay và không cung cấp dịch vụ cho vay. Chúng tôi tập hợp các khoản vay có hạn mức từ 500,000
+                        đồng tới 20,000,000 đồng, thời gian thanh toán khoản vay tối thiểu 90 ngày và tối đa 180 ngày,
+                        lãi suất phần trăm hàng năm (APR) từ 12% và đến 20%/năm (chưa bao gồm các khoản phí tư vấn, phí
+                        dịch vụ) từ các đơn vị cho vay uy tín đã được cấp phép hoạt động và đề xuất khoản vay có lợi
+                        nhất với khách hàng. Trong trường hợp số tiền vay không được thanh toán đúng hạn như hợp đồng
+                        vay quy định, các khoản phí phạt sẽ được áp dụng. Thông tin chi tiết về lãi suất (APR) và các
+                        khoản phí phạt sẽ được thông báo tới khác hàng trước khi hợp đồng vay được ký kết.
+                    </p>
+
+                    <p class="lh-lg mt-1">
+                        Ví dụ khoản vay: Số tiền vay: 3,000,000 đồng, thời gian vay: 92 ngày. lãi suất APR (12%/năm):
+                        60,199 đồng, phí dịch vụ: 1,404,000 đồng. Tổng số tiền khách hàng thanh toán là: 4,464,199 đồng.
+                        Dịch vụ của vaysieutoc.vn hoàn toàn miễn phí, chúng tôi không thu bất kỳ khoản phí nào từ người
+                        đi vay. Mọi chi tiết xin liên hệ Hotline <span class="my-text-green-first">(+84) 34 940
+                            1877</span>, Email <span class="my-text-green-first">hotro@vaysieutoc.vn</span> hoặc địa
+                        chỉ 29, Đường Đ. Lê Duẩn, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh
+                    </p>
+                </div>
+
+                <div class="footer-end d-flex justify-content-center text-center w-100 mt-3" style="font-size: 13px;">
+                    <span class="my-text-black-secondary">Copyright 2024 ©</span> <a href="/">vaysieutoc.vn</a></span>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <div class="btn_to_top position-fixed rounded-5   justify-content-center align-items-center border border-1"
+        style="width: 40px;height: 40px;;bottom: 10%; right: 1%;border-color: var(--c_green-first) !important; ">
+        <i class=" fs-5 bi bi-caret-up-fill  p-4  my-text-green-first "></i>
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+<script>
+
+
+
+    $(document).ready(function () {
+
+        $('[data-toggle="tooltip"]').tooltip();
+
+        wow = new WOW(
+            {
+                boxClass: 'wow',      // default
+                animateClass: 'animated', // default
+                offset: 0,          // default
+                mobile: true,       // default
+                live: true,
+                offset: 70,     // default
+            }
+        )
+        wow.init();
+
+
+
+
+        $('#carousel1').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: true,
+            dots: false,
+            autoplay: true,
+            arrows: true,
+
+
+            responsive: {
+                0: {
+                    items: 1,
+                    loop: true
+
+
+                },
+
+                767: {
+                    items: 1,
+                    loop: true
+
+                },
+                1024: {
+                    items: 1,
+
+
+                    loop: true
+                },
+
+
+            }
+        })
+
+
+
+
+        // my - bg - gallery
+        // gallery - item active
+
+
+
+
+
+        let windowWidth = $(window).width();
+
+
+
+        if ($(window).width() > 768) {
+
+
+
+        }
+
+        let btn_to_top = $(".btn_to_top");
+        $(window).scroll((e) => {
+
+            let pos_body = $(" html,body").scrollTop();
+            let header_body = $(".header-container").outerHeight();
+
+
+
+            if (pos_body >= header_body) {
+                $(".header-container").addClass("hang-up animate__animated animate__fadeInDown ")
+            }
+            else {
+                $(".header-container").removeClass("hang-up animate__animated animate__fadeInDown ")
+            }
+
+
+
+            if (pos_body >= 500) {
+                btn_to_top.css("display", "flex");
+
+                console.log(pos_body);
+
+            }
+            else {
+                btn_to_top.css("display", "none");
+
+            }
+
+
+
+        })
+
+        btn_to_top.click(() => {
+
+            $("html, body").animate({
+                scrollTop: 0
+            }, 100);
+
+
+
+            return false;
+
+        })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    })
+
+
+
+
+
+</script>
