@@ -303,10 +303,10 @@
     @media (max-width: 767px) {}
 </style>
 
-<!-- Messenger Plugin chat Code -->
+
 <div id="fb-root"></div>
 
-<!-- Your Plugin chat code -->
+
 <div id="fb-customer-chat" class="fb-customerchat">
 </div>
 
@@ -316,7 +316,7 @@
     chatbox.setAttribute("attribution", "biz_inbox");
 </script>
 
-<!-- Your SDK code -->
+
 <script>
     window.fbAsyncInit = function () {
         FB.init({
@@ -331,7 +331,7 @@
         js = d.createElement(s); js.id = id;
         js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
         fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
+    }(document, 'script', 'facebook-jssdk')); 
 </script>
 
 <body>
@@ -439,22 +439,25 @@
     <div class="banner-wrapper mt-2 mt-sm-4">
         <div class="my-container-1">
 
-            <div class="banner owl-carousel owl-theme w-100 py-2" id="carousel1">
 
 
+            <!-- <div class="banner owl-carousel owl-theme w-100 py-2" id="carousel1">
+
+                
                 <div class="item__img text-center d-flex justify-content-center" style="">
                     <img src="public/images/banner2.png" class="object-fit-cover rounded-3"
                         style="height: 420px;width: 100%; " alt="">
                 </div>
-                <div class="item__img text-center d-flex justify-content-center">
-                    <img src="public/images/banner3.png" class="object-fit-cover rounded-3"
+
+                <div class="item__img text-center d-flex justify-content-center" style="">
+                    <img src="public/images/banner2.png" class="object-fit-cover rounded-3"
                         style="height: 420px;width: 100%; " alt="">
-                </div>
+                </div> 
 
 
 
 
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -2617,7 +2620,7 @@
 
 
     <div class="btn_to_top position-fixed rounded-5   justify-content-center align-items-center border border-1"
-        style="width: 40px;height: 40px;;bottom: 10%; right: 1%;border-color: var(--c_green-first) !important; ">
+        style="width: 40px;height: 40px;;bottom: 16%; right: 1%;border-color: var(--c_green-first) !important; ">
         <i class=" fs-5 bi bi-caret-up-fill  p-4  my-text-green-first "></i>
     </div>
 
@@ -2730,9 +2733,9 @@
                     
                     
                     `;
-                    console.log(element.tenNganHang);
+                    //    console.log(element.tenNganHang);
                 });
-                console.log(htmlString);
+                // console.log(htmlString);
                 boxContent.innerHTML = htmlString;
 
             })
@@ -2773,15 +2776,15 @@
                             -webkit-box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
                             box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
                             border-radius: 5px;">
-                                <span href="">
-                                    <div class="item__brand text-center" style="height: 42px;">
+                                <a href="#">
+                                    <div class="item__brand text-center" style="height: 43px;">
                                         <img src="${element.linkAnh}" class=" object-fit-cover w-auto"
                                             style="max-height: 100%;" alt="cho-vay-lai-suat-thap">
                                     </div>
                                     <div class="item__title my-text-green-first fw-bold text-center mt-2"
                                         style="font-size: 20px;">
                                         ${element.tenNganHang}</div>
-                                </span>
+                                </a>
 
                                 <div class="item__description mt-4 my-text-black-first ">
                                     <div class="field d-flex justify-content-between  my-3 ">
@@ -2836,9 +2839,9 @@
 
                       </div>
                     `;
-                    console.log(element.tenNganHang);
+                    //   console.log(element.tenNganHang);
                 });
-                console.log(htmlString);
+                //     console.log(htmlString);
                 boxContent.innerHTML = htmlString;
 
             })
@@ -2846,6 +2849,95 @@
                 console.error('There was a problem with the fetch operation:', error);
             });
     });
+
+
+
+    /////thumbnail
+
+
+
+    let boxContent3 = $(".banner-wrapper .my-container-1")[0];
+    console.log(boxContent3);
+
+
+    fetch('https://6597f8ef668d248edf23d353.mockapi.io/Banner')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+
+            return response.json();
+        })
+        .then(data => {
+
+
+
+            let htmlString = ` <div class="banner owl-carousel owl-theme w-100 py-2" id="carousel1">`
+            data.forEach(element => {
+
+                htmlString += `
+
+                <a href="${element.url}" class="item__img text-center d-flex justify-content-center " style="">
+                    <img src="${element.linkAnh}" class="object-fit-cover rounded-3"
+                        style="height: 420px;width: 100%; " alt="">
+                </a>
+                      
+
+                `
+
+            });
+
+            htmlString += `</div>`;
+
+            console.log(htmlString);
+
+            boxContent3.innerHTML = htmlString;
+
+        }).then(() => {
+
+            $('#carousel1').owlCarousel({
+                loop: true,
+                margin: 0,
+                nav: true,
+                dots: false,
+                autoplay: true,
+                arrows: true,
+
+
+                responsive: {
+                    0: {
+                        items: 1,
+                        loop: true
+
+
+                    },
+
+                    767: {
+                        items: 1,
+                        loop: true
+
+                    },
+                    1024: {
+                        items: 1,
+
+
+                        loop: true
+                    },
+
+
+                }
+            })
+        })
+        .catch(error => {
+
+
+
+
+
+
+
+            console.error('There was a problem with the fetch operation:', error);
+        });
 
 
 
@@ -2912,39 +3004,43 @@
 
 
 
-
-        $('#carousel1').owlCarousel({
-            loop: true,
-            margin: 0,
-            nav: true,
-            dots: false,
-            autoplay: true,
-            arrows: true,
-
-
-            responsive: {
-                0: {
-                    items: 1,
-                    loop: true
+        // $('#carousel1').owlCarousel({
+        //     loop: true,
+        //     margin: 0,
+        //     nav: true,
+        //     dots: false,
+        //     autoplay: true,
+        //     arrows: true,
 
 
-                },
-
-                767: {
-                    items: 1,
-                    loop: true
-
-                },
-                1024: {
-                    items: 1,
+        //     responsive: {
+        //         0: {
+        //             items: 1,
+        //             loop: true
 
 
-                    loop: true
-                },
+        //         },
+
+        //         767: {
+        //             items: 1,
+        //             loop: true
+
+        //         },
+        //         1024: {
+        //             items: 1,
 
 
-            }
-        })
+        //             loop: true
+        //         },
+
+
+        //     }
+        // })
+
+
+
+
+
 
 
 
@@ -2986,7 +3082,7 @@
             if (pos_body >= 500) {
                 btn_to_top.css("display", "flex");
 
-                console.log(pos_body);
+                // console.log(pos_body);
 
             }
             else {
