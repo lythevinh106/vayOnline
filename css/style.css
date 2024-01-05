@@ -290,6 +290,14 @@ body {
 }
 
 
+.my-container-2 {
+    padding-left: 170px !important;
+    padding-right: 170px !important;
+
+}
+
+
+
 
 
 
@@ -356,6 +364,12 @@ body {
 
         padding-left: 15px !important;
         padding-right: 15px !important;
+    }
+
+    .my-container-2 {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+
     }
 }
 

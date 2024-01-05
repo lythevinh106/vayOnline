@@ -303,7 +303,36 @@
     @media (max-width: 767px) {}
 </style>
 
+<!-- Messenger Plugin chat Code -->
+<div id="fb-root"></div>
 
+<!-- Your Plugin chat code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "207154542478715");
+    chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+
+<!-- Your SDK code -->
+<script>
+    window.fbAsyncInit = function () {
+        FB.init({
+            xfbml: true,
+            version: 'v18.0'
+        });
+    };
+
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
 
 <body>
 
@@ -432,9 +461,10 @@
 
 
     <div class="content-wrapper mb-5" style=" margin-top: 86px !important;">
-        <div class="my-container-1">
+        <div class="my-container-2">
             <div class="content">
-                <h1 class=" my-text-black-third text-center fw-medium" style="font-size: 26px;">TOP NHỮNG GÓI VAY TIÊU
+                <h1 class=" my-text-black-third text-center fw-medium" style="font-size: 26px;">TOP NHỮNG GÓI
+                    VAY TIÊU
                     DÙNG ĐƯỢC GIẢI
                     NGÂN NHANH NHẤT <i class="bi bi-currency-exchange fs-3"></i>
                 </h1>
@@ -452,7 +482,7 @@
 
 
 
-                    <div class="col-12 col-lg-4 wow animate__animated  animate__backInUp">
+                    <!-- <div class="col-12 col-lg-4 wow animate__animated  animate__backInUp">
                         <div class="item position-relative px-3 pb-3 " style="border: 1px solid #f0f0f0;
                         -webkit-box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
                         box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
@@ -1882,7 +1912,7 @@
 
                         </div>
 
-                    </div>
+                    </div> -->
 
 
                 </div>
@@ -1899,9 +1929,10 @@
 
 
     <div class="content-bank-wrapper my-5" style=" margin-top: 86px !important;">
-        <div class="my-container-1">
+        <div class="my-container-2">
             <div class="content">
-                <h1 class=" my-text-black-third text-center fw-medium" style="font-size: 26px;">Mở Thẻ Ngân Hàng Số Đẹp
+                <h1 class=" my-text-black-third text-center fw-medium" style="font-size: 26px;">Mở Thẻ Ngân Hàng
+                    Số Đẹp
                     <i class="bi bi-bank fs-3"></i>
                 </h1>
 
@@ -1912,17 +1943,17 @@
 
 
 
-                    <div class="col-12 col-lg-4 wow animate__animated  animate__backInUp">
+                    <!-- <div class="col-12 col-lg-4 wow animate__animated  animate__backInUp">
                         <div class="item position-relative px-3 pb-3 " style="border: 1px solid #f0f0f0;
                         -webkit-box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
                         box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
                         border-radius: 5px;">
                             <a href="/register.html">
-                                <div class="item__brand text-center" style="height: 56px;">
+                                <div class="item__brand text-center" style="height: 42px;">
                                     <img src="public/images/bank1.png" class=" object-fit-cover w-auto"
                                         style="max-height: 100%;" alt="cho-vay-lai-suat-thap">
                                 </div>
-                                <div class="item__title my-text-green-first fw-bold text-center"
+                                <div class="item__title my-text-green-first fw-bold text-center mt-2"
                                     style="font-size: 20px;">
                                     Thẻ MB Bank</div>
                             </a>
@@ -1930,7 +1961,8 @@
                             <div class="item__description mt-4 my-text-black-first ">
                                 <div class="field d-flex justify-content-between  my-3 ">
                                     <div class="field__name  fw-bold d-flex align-content-center">
-                                        <i class="bi bi-cash"></i> <span class="fs-6 fw-semibold ms-1">Hạn Mức</span>
+                                        <i class="bi bi-cash"></i> <span class="fs-6 fw-semibold ms-1">Hạn
+                                            Mức</span>
                                     </div>
                                     <div class="field_value">
                                         1-20 triệu
@@ -1986,11 +2018,11 @@
                         box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
                         border-radius: 5px;">
                             <a href="/register.html">
-                                <div class="item__brand text-center" style="height: 56px;">
+                                <div class="item__brand text-center" style="height: 42px;">
                                     <img src="public/images/bank2.png" class=" object-fit-cover w-auto"
                                         style="max-height: 100%;" alt="cho-vay-lai-suat-thap">
                                 </div>
-                                <div class="item__title my-text-green-first fw-bold text-center"
+                                <div class="item__title my-text-green-first fw-bold text-center mt-2"
                                     style="font-size: 20px;">
                                     Thẻ Tecchombank</div>
                             </a>
@@ -1998,7 +2030,8 @@
                             <div class="item__description mt-4 my-text-black-first ">
                                 <div class="field d-flex justify-content-between  my-3 ">
                                     <div class="field__name  fw-bold d-flex align-content-center">
-                                        <i class="bi bi-cash"></i> <span class="fs-6 fw-semibold ms-1">Hạn Mức</span>
+                                        <i class="bi bi-cash"></i> <span class="fs-6 fw-semibold ms-1">Hạn
+                                            Mức</span>
                                     </div>
                                     <div class="field_value">
                                         1-20 triệu
@@ -2054,11 +2087,11 @@
                         box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
                         border-radius: 5px;">
                             <a href="/register.html">
-                                <div class="item__brand text-center" style="height: 56px;">
+                                <div class="item__brand text-center" style="height: 42px;">
                                     <img src="public/images/bank3.png" class=" object-fit-cover w-auto"
                                         style="max-height: 100%;" alt="cho-vay-lai-suat-thap">
                                 </div>
-                                <div class="item__title my-text-green-first fw-bold text-center"
+                                <div class="item__title my-text-green-first fw-bold text-center mt-2"
                                     style="font-size: 20px;">
                                     Thẻ BIDV</div>
                             </a>
@@ -2066,7 +2099,8 @@
                             <div class="item__description mt-4 my-text-black-first ">
                                 <div class="field d-flex justify-content-between  my-3 ">
                                     <div class="field__name  fw-bold d-flex align-content-center">
-                                        <i class="bi bi-cash"></i> <span class="fs-6 fw-semibold ms-1">Hạn Mức</span>
+                                        <i class="bi bi-cash"></i> <span class="fs-6 fw-semibold ms-1">Hạn
+                                            Mức</span>
                                     </div>
                                     <div class="field_value">
                                         1-20 triệu
@@ -2122,11 +2156,11 @@
                         box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
                         border-radius: 5px;">
                             <a href="/register.html">
-                                <div class="item__brand text-center" style="height: 56px;">
-                                    <img src="public/images/bank5.png" class=" object-fit-cover w-auto"
+                                <div class="item__brand text-center" style="height: 40px;">
+                                    <img src="public/images/bank4.png" class=" object-fit-cover w-auto"
                                         style="max-height: 100%;" alt="cho-vay-lai-suat-thap">
                                 </div>
-                                <div class="item__title my-text-green-first fw-bold text-center"
+                                <div class="item__title my-text-green-first fw-bold text-center mt-2"
                                     style="font-size: 20px;">
                                     Thẻ Ngân Hàng Số Cake</div>
                             </a>
@@ -2134,7 +2168,8 @@
                             <div class="item__description mt-4 my-text-black-first ">
                                 <div class="field d-flex justify-content-between  my-3 ">
                                     <div class="field__name  fw-bold d-flex align-content-center">
-                                        <i class="bi bi-cash"></i> <span class="fs-6 fw-semibold ms-1">Hạn Mức</span>
+                                        <i class="bi bi-cash"></i> <span class="fs-6 fw-semibold ms-1">Hạn
+                                            Mức</span>
                                     </div>
                                     <div class="field_value">
                                         1-20 triệu
@@ -2190,11 +2225,11 @@
                         box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
                         border-radius: 5px;">
                             <a href="/register.html">
-                                <div class="item__brand text-center" style="height: 56px;">
+                                <div class="item__brand text-center" style="height: 42px;">
                                     <img src="public/images/bank5.png" class=" object-fit-cover w-auto"
                                         style="max-height: 100%;" alt="cho-vay-lai-suat-thap">
                                 </div>
-                                <div class="item__title my-text-green-first fw-bold text-center"
+                                <div class="item__title my-text-green-first fw-bold text-center mt-2"
                                     style="font-size: 20px;">
                                     Thẻ VPBanh</div>
                             </a>
@@ -2202,7 +2237,8 @@
                             <div class="item__description mt-4 my-text-black-first ">
                                 <div class="field d-flex justify-content-between  my-3 ">
                                     <div class="field__name  fw-bold d-flex align-content-center">
-                                        <i class="bi bi-cash"></i> <span class="fs-6 fw-semibold ms-1">Hạn Mức</span>
+                                        <i class="bi bi-cash"></i> <span class="fs-6 fw-semibold ms-1">Hạn
+                                            Mức</span>
                                     </div>
                                     <div class="field_value">
                                         1-20 triệu
@@ -2258,11 +2294,11 @@
                         box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
                         border-radius: 5px;">
                             <a href="/register.html">
-                                <div class="item__brand text-center" style="height: 56px;">
-                                    <img src="public/images/bank6.png" class=" object-fit-cover w-auto"
+                                <div class="item__brand text-center" style="height: 42px;">
+                                    <img src="public/images/bank6.webp" class=" object-fit-cover w-auto"
                                         style="max-height: 100%;" alt="cho-vay-lai-suat-thap">
                                 </div>
-                                <div class="item__title my-text-green-first fw-bold text-center"
+                                <div class="item__title my-text-green-first fw-bold text-center mt-2"
                                     style="font-size: 20px;">
                                     VN PAY-Tặng KH mới 50K</div>
                             </a>
@@ -2270,7 +2306,8 @@
                             <div class="item__description mt-4 my-text-black-first ">
                                 <div class="field d-flex justify-content-between  my-3 ">
                                     <div class="field__name  fw-bold d-flex align-content-center">
-                                        <i class="bi bi-cash"></i> <span class="fs-6 fw-semibold ms-1">Hạn Mức</span>
+                                        <i class="bi bi-cash"></i> <span class="fs-6 fw-semibold ms-1">Hạn
+                                            Mức</span>
                                     </div>
                                     <div class="field_value">
                                         1-20 triệu
@@ -2318,7 +2355,7 @@
 
                         </div>
 
-                    </div>
+                    </div> -->
 
 
                 </div>
@@ -2335,9 +2372,9 @@
 
     <div class="lend-money-wrapper" style="background-color: rgb(249, 249, 249);">
 
-        <div class="my-container-1">
+        <div class="my-container-2">
 
-            <div class="lend-money text-center pt-3 mx-auto " style="width: 70%;">
+            <div class="lend-money text-center pt-3 mx-auto " style="">
 
                 <h1 class="mt-3 fs-4 fw-semibold my-text-black-first">Vay Tiền Online ,Bạn Cần</h1>
 
@@ -2391,8 +2428,8 @@
 
     </div>
 
-    <div class="procress-lend-wrapper mx-auto mt-5" style="width: 82%;">
-        <div class="my-container-1 ">
+    <div class="procress-lend-wrapper mx-auto mt-5" style="">
+        <div class="my-container-2 ">
             <div class="process-lend row align-items-start">
 
                 <div class="col-12 col-sm-6">
@@ -2413,14 +2450,16 @@
                             <i class="bi bi-check-circle-fill my-text-green-first"></i>
                             <span class="fw-bold">Chọn sản phẩm vay</span>
 
-                            <p class="lh-base mt-2">Chọn sản phẩm vay online phù hợp với nhu cầu tài chính của bản
+                            <p class="lh-base mt-2">Chọn sản phẩm vay online phù hợp với nhu cầu tài chính của
+                                bản
                                 thân.</p>
                         </div>
                         <div class="item mt-3">
                             <i class="bi bi-check-circle-fill my-text-green-first"></i>
                             <span class="fw-bold">Đăng ký hồ sơ vay</span>
 
-                            <p class="lh-base mt-2">Điền đầy đủ thông tin đăng ký & chụp hình cá nhân cùng với CMND/
+                            <p class="lh-base mt-2">Điền đầy đủ thông tin đăng ký & chụp hình cá nhân cùng với
+                                CMND/
                                 CCCD của bạn.</p>
                         </div>
                         <div class="item mt-3">
@@ -2428,7 +2467,8 @@
                             <span class="fw-bold">
                                 Xét duyệt khoản vay</span>
 
-                            <p class="lh-base mt-2">Nhận thông báo kết quả duyệt vay thông qua SMS hoặc Email nhanh
+                            <p class="lh-base mt-2">Nhận thông báo kết quả duyệt vay thông qua SMS hoặc Email
+                                nhanh
                                 chóng trong vài phút.</p>
                         </div>
                         <div class="item mt-3">
@@ -2437,7 +2477,8 @@
 
                                 Giải ngân khoản vay</span>
 
-                            <p class="lh-base mt-2">Sau khi hồ sơ vay được duyệt, số tiền sẽ được chuyển qua tài khoản
+                            <p class="lh-base mt-2">Sau khi hồ sơ vay được duyệt, số tiền sẽ được chuyển qua tài
+                                khoản
                                 ngân hàng mà bạn đăng ký.</p>
                         </div>
 
@@ -2465,8 +2506,10 @@
                     style="width: 60%;">
                     <li class="mx-3"><a href="https://vaysieutoc.vn/dieu-khoan/">Điều khoản sử dụng</a></li>
                     <li class="d-sm-none text-black mx-1">|</li>
-                    <li class="mx-3"><a href="https://vaysieutoc.vn/chinh-sach-bao-mat/">Chính sách bảo mật</a></li>
-                    <li class="mx-3 schema-website"><a href="https://vaysieutoc.vn/sitemap_index.xml">Sơ đồ website</a>
+                    <li class="mx-3"><a href="https://vaysieutoc.vn/chinh-sach-bao-mat/">Chính sách bảo mật</a>
+                    </li>
+                    <li class="mx-3 schema-website"><a href="https://vaysieutoc.vn/sitemap_index.xml">Sơ đồ
+                            website</a>
                     </li>
                 </ul>
                 <div class="footer-social d-flex align-items-center " style="width: 15%;">
@@ -2525,23 +2568,35 @@
                 <div class="footer-policy pb-3 border-bottom border-1"
                     style="margin-top: 64px;font-size: 11px !important; color: #999999;">
                     <p class="lh-lg">
-                        vaysieutoc.vn là dịch vụ hỗ trợ vay tiền online siêu tốc giải ngân nhanh trong ngày chỉ cần CMND
-                        (thẻ CCCD), nhận tiền qua tài khoản ngân hàng không cần gặp mặt.vaysieutoc.vn không phải là bên
-                        cho vay và không cung cấp dịch vụ cho vay. Chúng tôi tập hợp các khoản vay có hạn mức từ 500,000
-                        đồng tới 20,000,000 đồng, thời gian thanh toán khoản vay tối thiểu 90 ngày và tối đa 180 ngày,
-                        lãi suất phần trăm hàng năm (APR) từ 12% và đến 20%/năm (chưa bao gồm các khoản phí tư vấn, phí
-                        dịch vụ) từ các đơn vị cho vay uy tín đã được cấp phép hoạt động và đề xuất khoản vay có lợi
-                        nhất với khách hàng. Trong trường hợp số tiền vay không được thanh toán đúng hạn như hợp đồng
-                        vay quy định, các khoản phí phạt sẽ được áp dụng. Thông tin chi tiết về lãi suất (APR) và các
+                        vaysieutoc.vn là dịch vụ hỗ trợ vay tiền online siêu tốc giải ngân nhanh trong ngày chỉ
+                        cần CMND
+                        (thẻ CCCD), nhận tiền qua tài khoản ngân hàng không cần gặp mặt.vaysieutoc.vn không phải
+                        là bên
+                        cho vay và không cung cấp dịch vụ cho vay. Chúng tôi tập hợp các khoản vay có hạn mức từ
+                        500,000
+                        đồng tới 20,000,000 đồng, thời gian thanh toán khoản vay tối thiểu 90 ngày và tối đa 180
+                        ngày,
+                        lãi suất phần trăm hàng năm (APR) từ 12% và đến 20%/năm (chưa bao gồm các khoản phí tư
+                        vấn, phí
+                        dịch vụ) từ các đơn vị cho vay uy tín đã được cấp phép hoạt động và đề xuất khoản vay có
+                        lợi
+                        nhất với khách hàng. Trong trường hợp số tiền vay không được thanh toán đúng hạn như hợp
+                        đồng
+                        vay quy định, các khoản phí phạt sẽ được áp dụng. Thông tin chi tiết về lãi suất (APR)
+                        và các
                         khoản phí phạt sẽ được thông báo tới khác hàng trước khi hợp đồng vay được ký kết.
                     </p>
 
                     <p class="lh-lg mt-1">
-                        Ví dụ khoản vay: Số tiền vay: 3,000,000 đồng, thời gian vay: 92 ngày. lãi suất APR (12%/năm):
-                        60,199 đồng, phí dịch vụ: 1,404,000 đồng. Tổng số tiền khách hàng thanh toán là: 4,464,199 đồng.
-                        Dịch vụ của vaysieutoc.vn hoàn toàn miễn phí, chúng tôi không thu bất kỳ khoản phí nào từ người
+                        Ví dụ khoản vay: Số tiền vay: 3,000,000 đồng, thời gian vay: 92 ngày. lãi suất APR
+                        (12%/năm):
+                        60,199 đồng, phí dịch vụ: 1,404,000 đồng. Tổng số tiền khách hàng thanh toán là:
+                        4,464,199 đồng.
+                        Dịch vụ của vaysieutoc.vn hoàn toàn miễn phí, chúng tôi không thu bất kỳ khoản phí nào
+                        từ người
                         đi vay. Mọi chi tiết xin liên hệ Hotline <span class="my-text-green-first">(+84) 34 940
-                            1877</span>, Email <span class="my-text-green-first">hotro@vaysieutoc.vn</span> hoặc địa
+                            1877</span>, Email <span class="my-text-green-first">hotro@vaysieutoc.vn</span> hoặc
+                        địa
                         chỉ 29, Đường Đ. Lê Duẩn, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh
                     </p>
                 </div>
@@ -2578,11 +2633,268 @@
 </body>
 
 
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+        let boxContent = $(".content .content-main")[0];
+        console.log(boxContent);
+        fetch('https://6597a78a668d248edf232103.mockapi.io/NganHang')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                let htmlString = '';
+                data.forEach(element => {
+                    htmlString += `
+                   <div class="col-12 col-lg-4 wow animate__animated  animate__backInUp">
+                            <div class="item position-relative px-3 pb-3 " style="border: 1px solid #f0f0f0;
+                            -webkit-box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                            box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                            border-radius: 5px;">
+                                <a href="/register.html?id=${element.id}">
+                                    <div class="item__brand text-center" style="height: 43px;">
+                                        <img src="${element.linkAnh}" class=" object-fit-cover w-auto"
+                                            style="max-height: 100%;" alt="cho-vay-lai-suat-thap">
+                                    </div>
+                                    <div class="item__title my-text-green-first fw-bold text-center mt-2"
+                                        style="font-size: 20px;">
+                                        ${element.tenNganHang}</div>
+                                </a>
+
+                                <div class="item__description mt-4 my-text-black-first ">
+                                    <div class="field d-flex justify-content-between  my-3 ">
+                                        <div class="field__name  fw-bold d-flex align-content-center">
+                                            <i class="bi bi-cash"></i> <span class="fs-6 fw-semibold ms-1">Hạn Mức</span>
+                                        </div>
+                                        <div class="field_value">
+                                            ${element.hangMuc}
+                                        </div>
+                                    </div>
+                                    <div class="field d-flex justify-content-between my-3 ">
+                                        <div class="field__name  fw-bold d-flex align-content-center">
+                                            <i class="bi bi-calendar-date"></i> <span class="fs-6 fw-semibold ms-1">Kỳ
+                                                Hạn</span>
+                                        </div>
+                                        <div class="field_value">
+                                            ${element.KiHan}
+                                        </div>
+
+                                    </div>
+
+                                    <div class="field d-flex justify-content-between my-3 ">
+                                        <div class="field__name  fw-bold d-flex align-content-center">
+                                            <i class="bi bi-currency-dollar"></i> <span class="fs-6 fw-semibold ms-1">Lãi
+                                                Suất</span>
+                                        </div>
+                                        <div class="field_value">
+                                            ${element.laiSuat}
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <a href=" ${element.linkNganHang}"
+                                    class=" d-block item__btn btn my-bg-green-first w-100 text-wh fw-bold " style="color: #fff !important;
+
+                                box-shadow: 0 4px 0 0 #098b25;
+
+
+
+                                ">
+
+                                    ĐĂNG KÍ NGAY
+                                </a>
+
+                                <div class="item__promotion  position-absolute " style="top:-4%; left: -2%;">
+                                    <img src="public/images/promotion.png" style="width: 100px; height: 42px;" alt="">
+                                </div>
+
+
+
+                            </div>
+
+                      </div>
+                    
+                    
+                    `;
+                    console.log(element.tenNganHang);
+                });
+                console.log(htmlString);
+                boxContent.innerHTML = htmlString;
+
+            })
+            .catch(error => {
+                console.error('There was a problem with the fetch operation:', error);
+            });
+    });
+
+
+
+
+
+
+
+    /////ngan hang
+
+
+
+
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+        let boxContent = $(".content-bank-wrapper .content-main")[0];
+        console.log(boxContent);
+        fetch('https://6597a78a668d248edf232103.mockapi.io/MoTheNganHang')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                let htmlString = '';
+                data.forEach(element => {
+                    htmlString += ` 
+                    <div class="col-12 col-lg-4 wow animate__animated  animate__backInUp">
+                            <div class="item position-relative px-3 pb-3 " style="border: 1px solid #f0f0f0;
+                            -webkit-box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                            box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+                            border-radius: 5px;">
+                                <span href="">
+                                    <div class="item__brand text-center" style="height: 42px;">
+                                        <img src="${element.linkAnh}" class=" object-fit-cover w-auto"
+                                            style="max-height: 100%;" alt="cho-vay-lai-suat-thap">
+                                    </div>
+                                    <div class="item__title my-text-green-first fw-bold text-center mt-2"
+                                        style="font-size: 20px;">
+                                        ${element.tenNganHang}</div>
+                                </span>
+
+                                <div class="item__description mt-4 my-text-black-first ">
+                                    <div class="field d-flex justify-content-between  my-3 ">
+                                        <div class="field__name  fw-bold d-flex align-content-center">
+                                            <i class="bi bi-cash"></i> <span class="fs-6 fw-semibold ms-1">Hạn Mức</span>
+                                        </div>
+                                        <div class="field_value">
+                                            ${element.hangMuc}
+                                        </div>
+                                    </div>
+                                    <div class="field d-flex justify-content-between my-3 ">
+                                        <div class="field__name  fw-bold d-flex align-content-center">
+                                            <i class="bi bi-calendar-date"></i> <span class="fs-6 fw-semibold ms-1">Kỳ
+                                                Hạn</span>
+                                        </div>
+                                        <div class="field_value">
+                                            ${element.KiHan}
+                                        </div>
+
+                                    </div>
+
+                                    <div class="field d-flex justify-content-between my-3 ">
+                                        <div class="field__name  fw-bold d-flex align-content-center">
+                                            <i class="bi bi-currency-dollar"></i> <span class="fs-6 fw-semibold ms-1">Lãi
+                                                Suất</span>
+                                        </div>
+                                        <div class="field_value">
+                                            ${element.laiSuat}
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <a href=" ${element.linkNganHang}"
+                                    class=" d-block item__btn btn my-bg-green-first w-100 text-wh fw-bold " style="color: #fff !important;
+
+                                box-shadow: 0 4px 0 0 #098b25;
+
+
+
+                                ">
+
+                                    ĐĂNG KÍ NGAY
+                                </a>
+
+                                <div class="item__promotion  position-absolute " style="top:-4%; left: -2%;">
+                                    <img src="public/images/promotion.png" style="width: 100px; height: 42px;" alt="">
+                                </div>
+
+
+
+                            </div>
+
+                      </div>
+                    `;
+                    console.log(element.tenNganHang);
+                });
+                console.log(htmlString);
+                boxContent.innerHTML = htmlString;
+
+            })
+            .catch(error => {
+                console.error('There was a problem with the fetch operation:', error);
+            });
+    });
+
+
+
+
+
+
+
+</script>
+
+
+
 <script>
 
 
 
+
+
+
+
+
+
+
+
+
+
+
     $(document).ready(function () {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         $('[data-toggle="tooltip"]').tooltip();
 
